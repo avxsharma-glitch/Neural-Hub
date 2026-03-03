@@ -1,0 +1,432 @@
+{
+    "Subject_ID": "MECH_KME101",
+    "Subject": "AKTU B.Tech Fundamentals of Mechanical Engineering & Mechatronics (KME-101T) - Semester I/II",
+    "Code": "KME-101T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "MECH_U1",
+            "Unit": "Unit I: Introduction to Mechanics of Solid",
+            "Topics": [
+                {
+                    "Topic_ID": "MECH_U1_T1",
+                    "Topic": "Stress and Strain",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "normal stress",
+                        "shear stress",
+                        "strain",
+                        "hooke's law",
+                        "poisson's ratio",
+                        "elastic constants e g k",
+                        "relationship between elastic constants"
+                    ],
+                    "Core_Formulas": [
+                        "σ = F/A  (normal stress)",
+                        "ε = ΔL/L  (longitudinal strain)",
+                        "E = σ/ε  (Young's modulus — Hooke's Law)",
+                        "ν = -lateral strain / longitudinal strain  (Poisson's ratio)",
+                        "E = 2G(1 + ν)  (relation: E, G, ν)",
+                        "E = 3K(1 - 2ν)  (relation: E, K, ν)",
+                        "E = 9KG / (3K + G)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MECH_U1_T2",
+                    "Topic": "Mechanical Properties and Beams (SFD & BMD)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "stress-strain diagram",
+                        "ductile materials",
+                        "brittle materials",
+                        "factor of safety",
+                        "simply supported beam",
+                        "cantilever beam",
+                        "overhanging beam",
+                        "shear force",
+                        "bending moment",
+                        "sfd and bmd",
+                        "load-shear-moment relationships"
+                    ],
+                    "Core_Formulas": [
+                        "FOS = Ultimate stress / Working stress",
+                        "dV/dx = -w(x)  (load-shear relation)",
+                        "dM/dx = V  (shear-moment relation)",
+                        "Simply supported beam (central point load): M_max = WL/4 at centre"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MECH_U2",
+            "Unit": "Unit II: IC Engines and Refrigeration & Air Conditioning",
+            "Topics": [
+                {
+                    "Topic_ID": "MECH_U2_T1",
+                    "Topic": "Internal Combustion Engines",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ic engine components",
+                        "two-stroke engine",
+                        "four-stroke engine",
+                        "si engine spark ignition",
+                        "ci engine compression ignition",
+                        "scavenging process",
+                        "electric vehicles",
+                        "hybrid electric vehicles"
+                    ],
+                    "Core_Formulas": [
+                        "Thermal efficiency of Otto cycle: η = 1 - 1/rᵏ⁻¹  (r = compression ratio, k = Cp/Cv)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MECH_U2_T2",
+                    "Topic": "Refrigeration and Air Conditioning",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "refrigeration",
+                        "unit of refrigeration tr",
+                        "coefficient of performance cop",
+                        "heat pump",
+                        "domestic refrigerator",
+                        "air conditioning",
+                        "humidity",
+                        "dry bulb temperature",
+                        "wet bulb temperature",
+                        "dew point temperature",
+                        "comfort conditions",
+                        "window air conditioner"
+                    ],
+                    "Core_Formulas": [
+                        "COP_refrigerator = Q_L / W = Q_L / (Q_H - Q_L)",
+                        "COP_heat_pump = Q_H / W",
+                        "1 TR = 3.5 kW = 3.517 kW  (ton of refrigeration)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MECH_U3",
+            "Unit": "Unit III: Fluid Mechanics and Hydraulic Machinery",
+            "Topics": [
+                {
+                    "Topic_ID": "MECH_U3_T1",
+                    "Topic": "Fluid Properties and Fluid Statics",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "fluid properties",
+                        "pressure",
+                        "density",
+                        "dynamic viscosity",
+                        "kinematic viscosity",
+                        "specific gravity",
+                        "newtonian fluid",
+                        "non-newtonian fluid",
+                        "pascal's law"
+                    ],
+                    "Core_Formulas": [
+                        "τ = μ (du/dy)  (Newton's law of viscosity)",
+                        "ν = μ/ρ  (kinematic viscosity)",
+                        "P = ρgh  (hydrostatic pressure)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MECH_U3_T2",
+                    "Topic": "Fluid Dynamics and Hydraulic Machinery",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "continuity equation",
+                        "bernoulli's equation",
+                        "venturimeter",
+                        "orifice meter",
+                        "pelton turbine",
+                        "francis turbine",
+                        "kaplan turbine",
+                        "centrifugal pump",
+                        "hydraulic accumulator",
+                        "hydraulic lift"
+                    ],
+                    "Core_Formulas": [
+                        "A₁V₁ = A₂V₂  (continuity equation)",
+                        "P/ρg + V²/2g + z = constant  (Bernoulli's equation)",
+                        "Q = A₁A₂ √(2gh) / √(A₁² - A₂²)  (Venturimeter)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MECH_U4",
+            "Unit": "Unit IV: Measurements and Control Systems",
+            "Topics": [
+                {
+                    "Topic_ID": "MECH_U4_T1",
+                    "Topic": "Measurement and Metrology",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "measurement concept",
+                        "error in measurements",
+                        "calibration",
+                        "accuracy",
+                        "precision",
+                        "resolution",
+                        "pressure measurement",
+                        "temperature measurement",
+                        "strain measurement",
+                        "force measurement",
+                        "torque measurement",
+                        "limits fits and tolerances",
+                        "gauges"
+                    ],
+                    "Core_Formulas": [
+                        "% Error = |(Measured - True) / True| × 100"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MECH_U4_T2",
+                    "Topic": "Control Systems",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "control system",
+                        "elements of control system",
+                        "open-loop control system",
+                        "closed-loop control system",
+                        "feedback control",
+                        "automatic toaster example",
+                        "ac temperature control example"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MECH_U5",
+            "Unit": "Unit V: Introduction to Mechatronics",
+            "Topics": [
+                {
+                    "Topic_ID": "MECH_U5_T1",
+                    "Topic": "Mechatronics Fundamentals",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "mechatronics evolution",
+                        "scope of mechatronics",
+                        "advantages of mechatronics",
+                        "disadvantages of mechatronics",
+                        "industrial applications",
+                        "autotronics",
+                        "bionics",
+                        "avionics"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MECH_U5_T2",
+                    "Topic": "Sensors, Actuators, and Drive Systems",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "sensors",
+                        "transducers",
+                        "mechanical actuation systems",
+                        "kinematic chains",
+                        "cam mechanism",
+                        "ratchet mechanism",
+                        "gear trains",
+                        "belt drives",
+                        "bearings",
+                        "hydraulic actuation systems",
+                        "pneumatic actuation systems",
+                        "pressure control valves",
+                        "directional control valves",
+                        "rotary actuators",
+                        "accumulators"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Note": "Based on older AKTU syllabus. PYQs had placeholder Year=YYYY — all skipped. Add real PYQs once official papers are sourced.",
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 10,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

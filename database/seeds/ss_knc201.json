@@ -1,0 +1,378 @@
+{
+    "Subject_ID": "SS_KNC201",
+    "Subject": "AKTU B.Tech Soft Skills II (KNC-201) - Semester II",
+    "Code": "KNC-201",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "SS_U1",
+            "Unit": "Unit I: LSRW Skills",
+            "Topics": [
+                {
+                    "Topic_ID": "SS_U1_T1",
+                    "Topic": "Active Listening and Pronunciation",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "active listening",
+                        "art of listening",
+                        "pronunciation",
+                        "stress in english language",
+                        "tongue-twisters"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "SS_U1_T2",
+                    "Topic": "Reading and Writing Methods",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "skimming",
+                        "scanning",
+                        "churning",
+                        "assimilation",
+                        "effective writing tools",
+                        "inductive method",
+                        "deductive method",
+                        "exposition",
+                        "linear writing",
+                        "interrupted writing",
+                        "spatial writing",
+                        "chronological writing"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "SS_U2",
+            "Unit": "Unit II: Conversational & Social Skills",
+            "Topics": [
+                {
+                    "Topic_ID": "SS_U2_T1",
+                    "Topic": "Conversation Skills",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "definition of conversation",
+                        "speech vs conversation",
+                        "sustaining interest",
+                        "rules of conversation",
+                        "conversation and personality"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "SS_U2_T2",
+                    "Topic": "Social Skills and Relationship Management",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "role of communication",
+                        "purposeful socializing",
+                        "effective communication",
+                        "conflict resolution",
+                        "relationship management",
+                        "respect",
+                        "feedback",
+                        "goal setting",
+                        "interpersonal skills"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "SS_U3",
+            "Unit": "Unit III: Motivation Skills",
+            "Topics": [
+                {
+                    "Topic_ID": "SS_U3_T1",
+                    "Topic": "Sources of Motivation",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "definition of motivation",
+                        "initiative",
+                        "willingness to work",
+                        "eagerness",
+                        "learning ability",
+                        "going extra miles",
+                        "learning and analysis"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "SS_U3_T2",
+                    "Topic": "Motivating Others",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "one to one correspondence",
+                        "individual motivation",
+                        "mobilizing optimal performance",
+                        "praise and compliment",
+                        "goal setting for employees",
+                        "cultivation of skills",
+                        "facilitating active involvement",
+                        "trust"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "SS_U4",
+            "Unit": "Unit IV: Work-Place Skills",
+            "Topics": [
+                {
+                    "Topic_ID": "SS_U4_T1",
+                    "Topic": "Stress Management",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "managing stress",
+                        "4 a's technique",
+                        "avoid",
+                        "alter",
+                        "access",
+                        "adapt",
+                        "resilience",
+                        "flexibility in thought",
+                        "tolerance",
+                        "self-belief"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "SS_U4_T2",
+                    "Topic": "Team Work and Positive Thinking",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "team-work",
+                        "communication in teams",
+                        "compassion in leadership",
+                        "listening and responding",
+                        "speaking skills",
+                        "positive thinking",
+                        "controlling mind"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "SS_U5",
+            "Unit": "Unit V: Creativity and Critical Thinking",
+            "Topics": [
+                {
+                    "Topic_ID": "SS_U5_T1",
+                    "Topic": "Creativity",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "definition of creativity",
+                        "fluency",
+                        "originality",
+                        "curiosity",
+                        "creative methods"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "SS_U5_T2",
+                    "Topic": "Critical Thinking Abilities",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "definition of critical thinking",
+                        "discerning facts and claims",
+                        "credibility analysis",
+                        "identifying valid reasons",
+                        "distinguishing relevant from irrelevant",
+                        "detecting bias",
+                        "knowing hidden motives"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Note": "UNVERIFIED — based on KNC-201 third-party portal data. No PYQs available yet. Replace PYQs once official data is sourced.",
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 10,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

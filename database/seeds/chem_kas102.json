@@ -1,0 +1,1098 @@
+{
+    "Subject_ID": "CHEM_KAS102",
+    "Subject": "AKTU B.Tech Chemistry I (KAS-102T/202T) - Semester I/II",
+    "Code": "KAS-102T",
+    "Session_Effective": "2020-21",
+    "Notes": "Syllabus effective from Session 2020-21. PYQs to be collected from aktu.ac.in/old-question-paper.html. PYQ arrays pre-structured for future ingestion.",
+    "Units": [
+        {
+            "Unit_ID": "CHEM_U1",
+            "Unit": "Unit I: Atomic And Molecular Structure",
+            "Topics": [
+                {
+                    "Topic_ID": "CHEM_U1_T1",
+                    "Topic": "Molecular Orbitals of Diatomic Molecules",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "molecular orbital theory",
+                        "bonding molecular orbital",
+                        "antibonding molecular orbital",
+                        "bond order calculation",
+                        "homo-nuclear diatomic molecules",
+                        "hetero-nuclear diatomic molecules",
+                        "aufbau principle",
+                        "pauli exclusion principle",
+                        "hund's rule",
+                        "sigma and pi orbitals",
+                        "sigma* and pi* orbitals",
+                        "energy level diagram",
+                        "paramagnetic",
+                        "diamagnetic"
+                    ],
+                    "Core_Formulas": [
+                        "bond order = (Nb - Na) / 2"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U1_T2",
+                    "Topic": "Band Theory of Solids",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "band theory",
+                        "conduction band",
+                        "valence band",
+                        "forbidden gap",
+                        "conductors",
+                        "semiconductors",
+                        "insulators",
+                        "fermi level"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U1_T3",
+                    "Topic": "Liquid Crystals and Applications",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "liquid crystals",
+                        "thermotropic",
+                        "lyotropic",
+                        "nematic phase",
+                        "smectic phase",
+                        "cholesteric phase",
+                        "lcd applications",
+                        "optical displays"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U1_T4",
+                    "Topic": "Point Defects in Solids",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "point defects",
+                        "vacancy defect",
+                        "interstitial defect",
+                        "substitutional defect",
+                        "frenkel defect",
+                        "schottky defect",
+                        "impurity defects"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U1_T5",
+                    "Topic": "Structure and Applications of Graphite and Fullerenes",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "graphite structure",
+                        "hexagonal layers",
+                        "sp2 hybridization",
+                        "fullerenes",
+                        "c60",
+                        "buckyballs",
+                        "carbon nanotubes",
+                        "electrical conductivity",
+                        "lubricant applications"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U1_T6",
+                    "Topic": "Concepts of Nano-materials and Applications",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "nanomaterials",
+                        "quantum dots",
+                        "nanoparticles",
+                        "surface to volume ratio",
+                        "size-dependent properties",
+                        "nanotechnology applications",
+                        "drug delivery",
+                        "catalysis"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "CHEM_U2",
+            "Unit": "Unit II: Spectroscopic Techniques And Applications",
+            "Topics": [
+                {
+                    "Topic_ID": "CHEM_U2_T1",
+                    "Topic": "Rotational Spectroscopy",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "microwave spectroscopy",
+                        "rotational spectra",
+                        "rigid rotor",
+                        "moment of inertia",
+                        "bond length determination",
+                        "selection rules"
+                    ],
+                    "Core_Formulas": [
+                        "B = h / (8π²Ic)",
+                        "ν̃ = 2B(J+1)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U2_T2",
+                    "Topic": "Vibrational Spectroscopy",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ir spectroscopy",
+                        "vibrational spectra",
+                        "harmonic oscillator",
+                        "anharmonicity",
+                        "stretching frequency",
+                        "bending vibrations",
+                        "fingerprint region",
+                        "functional group region",
+                        "hooke's law",
+                        "force constant",
+                        "selection rules"
+                    ],
+                    "Core_Formulas": [
+                        "ν = (1/2π) √(k/μ)",
+                        "ν̃ = (1/2πc) √(k/μ)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U2_T3",
+                    "Topic": "Ultraviolet-Visible Spectroscopy",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "uv-vis spectroscopy",
+                        "electronic transitions",
+                        "sigma to sigma* transition",
+                        "n to pi* transition",
+                        "pi to pi* transition",
+                        "chromophores",
+                        "auxochromes",
+                        "beer-lambert law",
+                        "absorption maxima",
+                        "bathochromic shift",
+                        "hypsochromic shift"
+                    ],
+                    "Core_Formulas": [
+                        "A = εbc",
+                        "A = log(I₀/I)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U2_T4",
+                    "Topic": "Raman Spectroscopy",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "raman effect",
+                        "stokes lines",
+                        "anti-stokes lines",
+                        "rayleigh scattering",
+                        "polarizability",
+                        "mutual exclusion principle",
+                        "complementary to ir"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "CHEM_U3",
+            "Unit": "Unit III: Electrochemistry",
+            "Topics": [
+                {
+                    "Topic_ID": "CHEM_U3_T1",
+                    "Topic": "Nernst Equation and Applications",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "nernst equation",
+                        "electrode potential",
+                        "cell potential",
+                        "concentration cells",
+                        "equilibrium constant from emf"
+                    ],
+                    "Core_Formulas": [
+                        "E = E° - (RT/nF) ln Q",
+                        "E = E° - (0.0592/n) log Q  [at 298K]",
+                        "ΔG° = -RT ln K"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U3_T2",
+                    "Topic": "Relation of EMF with Thermodynamic Functions",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "gibbs free energy",
+                        "enthalpy from emf",
+                        "entropy from temperature coefficient",
+                        "temperature coefficient of emf"
+                    ],
+                    "Core_Formulas": [
+                        "ΔG = -nFE",
+                        "ΔG = ΔH - TΔS",
+                        "ΔS = nF(dE/dT)",
+                        "ΔH = -nF[E - T(dE/dT)]"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U3_T3",
+                    "Topic": "Lead Storage Battery",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "lead-acid battery",
+                        "secondary cell",
+                        "anode: pb",
+                        "cathode: pbo2",
+                        "electrolyte: h2so4",
+                        "discharge reaction",
+                        "charging process",
+                        "applications"
+                    ],
+                    "Core_Formulas": [
+                        "Pb + SO₄²⁻ → PbSO₄ + 2e⁻  (anode)",
+                        "PbO₂ + SO₄²⁻ + 4H⁺ + 2e⁻ → PbSO₄ + 2H₂O  (cathode)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U3_T4",
+                    "Topic": "Corrosion: Causes, Effects and Prevention",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "corrosion",
+                        "dry corrosion",
+                        "wet corrosion",
+                        "rusting of iron",
+                        "galvanic corrosion",
+                        "concentration cell corrosion",
+                        "pitting corrosion",
+                        "cathodic protection",
+                        "sacrificial anode",
+                        "impressed current",
+                        "protective coatings",
+                        "alloying"
+                    ],
+                    "Core_Formulas": [
+                        "Fe → Fe²⁺ + 2e⁻  (anodic reaction)",
+                        "O₂ + 2H₂O + 4e⁻ → 4OH⁻  (cathodic reaction)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U3_T5",
+                    "Topic": "Phase Rule and Application to Water System",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "gibbs phase rule",
+                        "one-component system",
+                        "water system",
+                        "phase diagram",
+                        "triple point",
+                        "melting curve",
+                        "vaporization curve",
+                        "sublimation curve",
+                        "metastable phases"
+                    ],
+                    "Core_Formulas": [
+                        "F = C - P + 2"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "CHEM_U4",
+            "Unit": "Unit IV: Water Analysis and Fuels",
+            "Topics": [
+                {
+                    "Topic_ID": "CHEM_U4_T1",
+                    "Topic": "Hardness of Water",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "hard water",
+                        "temporary hardness",
+                        "permanent hardness",
+                        "calcium ions",
+                        "magnesium ions",
+                        "bicarbonates",
+                        "chlorides",
+                        "sulfates",
+                        "degree of hardness",
+                        "ppm",
+                        "mg/l",
+                        "clark degree",
+                        "edta titration",
+                        "indicator",
+                        "buffer solution"
+                    ],
+                    "Core_Formulas": [
+                        "Hardness (ppm) = (moles of Ca²⁺+Mg²⁺) × 100000 / volume of water (mL)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T2",
+                    "Topic": "Lime-Soda Process",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "lime-soda process",
+                        "cold lime-soda",
+                        "hot lime-soda",
+                        "lime cao",
+                        "soda na2co3",
+                        "softening reactions",
+                        "removal of hardness",
+                        "sludge formation"
+                    ],
+                    "Core_Formulas": [
+                        "Ca(HCO₃)₂ + Ca(OH)₂ → 2CaCO₃↓ + 2H₂O",
+                        "MgSO₄ + Na₂CO₃ → MgCO₃ + Na₂SO₄"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T3",
+                    "Topic": "Zeolite Process",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "zeolite",
+                        "permutit",
+                        "sodium aluminum silicate",
+                        "ion exchange",
+                        "regeneration with nacl",
+                        "advantages and disadvantages"
+                    ],
+                    "Core_Formulas": [
+                        "Na₂Ze + Ca²⁺ → CaZe + 2Na⁺",
+                        "CaZe + 2NaCl → Na₂Ze + CaCl₂  (regeneration)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T4",
+                    "Topic": "Ion Exchange Resin Process",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ion exchange resins",
+                        "cation exchange resin",
+                        "anion exchange resin",
+                        "deionization",
+                        "demineralization",
+                        "regeneration with acid and alkali"
+                    ],
+                    "Core_Formulas": [
+                        "R-H⁺ + M⁺ → R-M + H⁺",
+                        "R-OH⁻ + X⁻ → R-X + OH⁻"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T5",
+                    "Topic": "Reverse Osmosis",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "reverse osmosis",
+                        "ro membrane",
+                        "semi-permeable membrane",
+                        "osmotic pressure",
+                        "applied pressure > osmotic pressure",
+                        "desalination",
+                        "water purification"
+                    ],
+                    "Core_Formulas": [
+                        "π = iMRT  (van't Hoff equation for osmotic pressure)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T6",
+                    "Topic": "Classification of Fuels",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "fuels",
+                        "primary fuels",
+                        "secondary fuels",
+                        "solid fuels",
+                        "liquid fuels",
+                        "gaseous fuels",
+                        "natural fuels",
+                        "artificial fuels",
+                        "fossil fuels"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T7",
+                    "Topic": "Analysis of Coal",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "proximate analysis",
+                        "moisture content",
+                        "volatile matter",
+                        "ash content",
+                        "fixed carbon",
+                        "ultimate analysis",
+                        "carbon percentage",
+                        "hydrogen percentage",
+                        "sulfur content",
+                        "nitrogen content",
+                        "oxygen by difference"
+                    ],
+                    "Core_Formulas": [
+                        "Fixed Carbon = 100 - (Moisture + Volatile Matter + Ash)  [proximate]"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U4_T8",
+                    "Topic": "Determination of Calorific Values",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "calorific value",
+                        "gross calorific value",
+                        "higher heating value",
+                        "net calorific value",
+                        "lower heating value",
+                        "bomb calorimeter",
+                        "constant volume",
+                        "water equivalent",
+                        "dulong's formula"
+                    ],
+                    "Core_Formulas": [
+                        "GCV = 1/100 × [8080C + 34500(H - O/8) + 2240S]  (Dulong's formula)",
+                        "NCV = GCV - 0.09H × 587"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "CHEM_U5",
+            "Unit": "Unit V: Polymer",
+            "Topics": [
+                {
+                    "Topic_ID": "CHEM_U5_T1",
+                    "Topic": "Basic Concepts of Polymer",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "polymers",
+                        "monomers",
+                        "polymerization",
+                        "degree of polymerization",
+                        "functionality",
+                        "homopolymers",
+                        "copolymers",
+                        "thermoplastics",
+                        "thermosetting plastics",
+                        "addition polymerization",
+                        "condensation polymerization"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U5_T2",
+                    "Topic": "Polymer Blends and Composites",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "polymer blends",
+                        "miscible blends",
+                        "immiscible blends",
+                        "compatibilizer",
+                        "polymer composites",
+                        "reinforcement",
+                        "matrix",
+                        "fiber-reinforced composites",
+                        "particulate composites"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U5_T3",
+                    "Topic": "Conducting Polymers",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "conducting polymers",
+                        "intrinsically conducting polymers",
+                        "extrinsically conducting polymers",
+                        "doping",
+                        "polyacetylene",
+                        "polyaniline",
+                        "polypyrrole",
+                        "conjugated system",
+                        "applications in electronics"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U5_T4",
+                    "Topic": "Biodegradable Polymers",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "biodegradable polymers",
+                        "biopolymers",
+                        "pla",
+                        "poly(lactic acid)",
+                        "phb",
+                        "polyhydroxybutyrate",
+                        "starch-based polymers",
+                        "environmental degradation",
+                        "compostable"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U5_T5",
+                    "Topic": "Industrially Important Polymers",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "buna-s",
+                        "sbr rubber",
+                        "styrene-butadiene rubber",
+                        "buna-n",
+                        "nitrile rubber",
+                        "nbr",
+                        "neoprene",
+                        "chloroprene rubber",
+                        "nylon 6",
+                        "polycaprolactam",
+                        "nylon 6,6",
+                        "polyhexamethylene adipamide",
+                        "terylene",
+                        "dacron",
+                        "polyethylene terephthalate",
+                        "pet",
+                        "preparation methods",
+                        "applications"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "CHEM_U5_T6",
+                    "Topic": "Organometallic Compounds: Grignard Reagent",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "organometallic compounds",
+                        "grignard reagent",
+                        "preparation from alkyl halide",
+                        "anhydrous conditions",
+                        "dry ether",
+                        "nucleophilic addition",
+                        "reaction with carbonyl compounds",
+                        "alcohol synthesis",
+                        "reaction with co2",
+                        "carboxylic acid synthesis"
+                    ],
+                    "Core_Formulas": [
+                        "R-X + Mg (dry ether) → R-Mg-X",
+                        "R-Mg-X + R'CHO → R-CH(R')-OMgX → (H₃O⁺) → R-CH(R')-OH"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 29,
+        "Total_Units": 5,
+        "Compatibility": [
+            "Subject Mastery Grid",
+            "Weak Cluster Detection",
+            "Exam Priority Ranking",
+            "Recommendation Engine",
+            "Radar Chart"
+        ],
+        "AI_Required_For_Core_Logic": false
+    }
+}

@@ -1,0 +1,501 @@
+{
+    "Subject_ID": "EVS_KAS402",
+    "Subject": "AKTU B.Tech Environmental Studies (KAS-402/KAS-302) - NEP-2020",
+    "Code": "KAS-402",
+    "Session_Effective": "2021-22",
+    "Units": [
+        {
+            "Unit_ID": "EVS_U1",
+            "Unit": "Unit I: Introduction to Environmental Studies and Natural Resources",
+            "Topics": [
+                {
+                    "Topic_ID": "EVS_U1_T1",
+                    "Topic": "Multidisciplinary Nature of Environmental Studies",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "scope of environmental studies",
+                        "importance of environmental education",
+                        "need for public awareness"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U1_T2",
+                    "Topic": "Renewable and Non-Renewable Resources",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "renewable resources",
+                        "non-renewable resources",
+                        "sustainable utilization",
+                        "forest resources",
+                        "water resources",
+                        "mineral resources",
+                        "food resources",
+                        "energy resources",
+                        "land resources"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "EVS_U1_T2_PYQ1",
+                            "Year": "2023",
+                            "Question": "What are the causes and effects of deforestation?",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "deforestation",
+                                "forest resources"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "EVS_U1_T2_PYQ2",
+                            "Year": "2023",
+                            "Question": "Explain water conservation strategies with special reference to rainwater harvesting.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "water conservation",
+                                "rainwater harvesting"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "EVS_U2",
+            "Unit": "Unit II: Ecosystems and Biodiversity",
+            "Topics": [
+                {
+                    "Topic_ID": "EVS_U2_T1",
+                    "Topic": "Ecosystem: Structure and Function",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ecosystem structure",
+                        "producers",
+                        "consumers",
+                        "decomposers",
+                        "food chain",
+                        "food web",
+                        "ecological pyramid",
+                        "energy flow",
+                        "biogeochemical cycles"
+                    ],
+                    "Core_Formulas": [
+                        "10% Energy Law: only ~10% of energy transfers between trophic levels"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U2_T2",
+                    "Topic": "Types of Ecosystem",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "forest ecosystem",
+                        "grassland ecosystem",
+                        "desert ecosystem",
+                        "aquatic ecosystem ponds lakes rivers oceans"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U2_T3",
+                    "Topic": "Biodiversity and Its Conservation",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "genetic diversity",
+                        "species diversity",
+                        "ecological diversity",
+                        "india as mega-biodiversity nation",
+                        "hotspots of biodiversity",
+                        "habitat loss",
+                        "poaching",
+                        "man-wildlife conflict",
+                        "endangered species",
+                        "endemic species",
+                        "in-situ conservation",
+                        "ex-situ conservation"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "EVS_U2_T3_PYQ1",
+                            "Year": "2023",
+                            "Question": "What do you mean by biodiversity? Describe the methods of biodiversity conservation.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "biodiversity",
+                                "in-situ conservation",
+                                "ex-situ conservation"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "EVS_U3",
+            "Unit": "Unit III: Environmental Pollution",
+            "Topics": [
+                {
+                    "Topic_ID": "EVS_U3_T1",
+                    "Topic": "Types of Pollution and Their Causes",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "air pollution",
+                        "water pollution",
+                        "soil pollution",
+                        "marine pollution",
+                        "noise pollution",
+                        "thermal pollution",
+                        "nuclear hazards"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U3_T2",
+                    "Topic": "Pollution Control and Solid Waste Management",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "pollution control measures",
+                        "solid waste management",
+                        "5r's reduce reuse recycle recover restore",
+                        "disaster management",
+                        "floods",
+                        "earthquakes",
+                        "cyclones",
+                        "landslides"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "EVS_U3_T2_PYQ1",
+                            "Year": "2023",
+                            "Question": "Explain solid waste management with reference to the concept of 5R's.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "solid waste management",
+                                "5r's"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U3_T3",
+                    "Topic": "Environmental Policies and International Protocols",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "environment protection act 1986",
+                        "air act 1981",
+                        "water act 1974",
+                        "wildlife protection act 1972",
+                        "forest conservation act 1980",
+                        "montreal protocol",
+                        "kyoto protocol",
+                        "international environmental agreements"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "EVS_U4",
+            "Unit": "Unit IV: Social Issues and the Environment",
+            "Topics": [
+                {
+                    "Topic_ID": "EVS_U4_T1",
+                    "Topic": "Sustainable Development and Water Conservation",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "definition of sustainable development",
+                        "sustainable development goals sdgs",
+                        "urban problems related to energy",
+                        "water conservation",
+                        "rainwater harvesting",
+                        "watershed management"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "EVS_U4_T1_PYQ1",
+                            "Year": "2023",
+                            "Question": "What is sustainable development? Explain the concept of sustainable development goals.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "sustainable development",
+                                "sdgs"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U4_T2",
+                    "Topic": "Environmental Ethics and Climate Change",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "environmental ethics",
+                        "climate change",
+                        "global warming",
+                        "acid rain",
+                        "ozone layer depletion",
+                        "greenhouse effect",
+                        "wasteland reclamation"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "EVS_U4_T2_PYQ1",
+                            "Year": "2023",
+                            "Question": "What is global warming? Explain its causes and effects.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "global warming",
+                                "greenhouse effect",
+                                "climate change"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U4_T3",
+                    "Topic": "Environmental Impact Assessment (EIA)",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "eia process",
+                        "role of ngos in environmental protection",
+                        "human population growth"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "EVS_U5",
+            "Unit": "Unit V: Human Population and Field Work",
+            "Topics": [
+                {
+                    "Topic_ID": "EVS_U5_T1",
+                    "Topic": "Population Growth and Its Impacts",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "population explosion",
+                        "family welfare programs",
+                        "environment and human health",
+                        "hiv/aids",
+                        "human rights"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "EVS_U5_T2",
+                    "Topic": "Environmental Movements and Field Work",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "chipko movement",
+                        "appiko movement",
+                        "narmada bachao andolan",
+                        "environmental movements",
+                        "field work report",
+                        "ecosystem study"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Note": "NEP-2020 syllabus effective 2021-22. PYQs from 2022-23 paper. Refresh when official 2026 syllabus is released.",
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 12,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

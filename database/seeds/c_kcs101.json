@@ -1,0 +1,590 @@
+{
+    "Subject_ID": "C_KCS101",
+    "Subject": "AKTU B.Tech Programming for Problem Solving (KCS-101T) - Semester I/II",
+    "Code": "KCS-101T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "C_U1",
+            "Unit": "Unit I: Introduction to Programming",
+            "Topics": [
+                {
+                    "Topic_ID": "C_U1_T1",
+                    "Topic": "About Computing and Programming Languages",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "generations of programming languages",
+                        "machine language",
+                        "assembly language",
+                        "high-level language",
+                        "compiler vs interpreter",
+                        "translator types"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U1_T2",
+                    "Topic": "Idea of Algorithm",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "stepwise refinement",
+                        "flowchart symbols",
+                        "pseudocode",
+                        "algorithmic complexity",
+                        "logic design",
+                        "algorithm properties"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U1_T3",
+                    "Topic": "Programming Basics",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "syntax rules",
+                        "compilation process",
+                        "logical errors",
+                        "source code",
+                        "object code",
+                        "executable code",
+                        "c program structure",
+                        "header files",
+                        "stdio.h"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U1_T4",
+                    "Topic": "Data Types and Storage Classes",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "variable scope",
+                        "variable lifetime",
+                        "format specifiers",
+                        "primitive types int float char double",
+                        "memory allocation",
+                        "auto",
+                        "register",
+                        "static",
+                        "extern",
+                        "local vs global variables"
+                    ],
+                    "Core_Formulas": [
+                        "sizeof(int)=4, sizeof(float)=4, sizeof(double)=8, sizeof(char)=1  (typical 32/64-bit)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "C_U2",
+            "Unit": "Unit II: Arithmetic Expressions and Conditional Branching",
+            "Topics": [
+                {
+                    "Topic_ID": "C_U2_T1",
+                    "Topic": "Arithmetic Expressions and Operator Precedence",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "arithmetic operators",
+                        "relational operators",
+                        "logical operators",
+                        "bitwise operators",
+                        "assignment operators",
+                        "increment decrement operators",
+                        "operator precedence",
+                        "associativity",
+                        "type conversion",
+                        "implicit casting",
+                        "explicit casting"
+                    ],
+                    "Core_Formulas": [
+                        "Precedence (high→low): (), ++/--, *, /, %, +/-, relational, logical, assignment"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U2_T2",
+                    "Topic": "Conditional Branching",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "if-else nesting",
+                        "switch-case",
+                        "break statement",
+                        "default case",
+                        "ternary operator",
+                        "dangling else problem",
+                        "goto statement"
+                    ],
+                    "Core_Formulas": [
+                        "Ternary: condition ? expr_if_true : expr_if_false"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "C_U3",
+            "Unit": "Unit III: Iteration and Loops; Functions",
+            "Topics": [
+                {
+                    "Topic_ID": "C_U3_T1",
+                    "Topic": "Iteration and Loop Constructs",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "while loop",
+                        "do-while loop",
+                        "for loop",
+                        "loop control variables",
+                        "nested loops",
+                        "break statement",
+                        "continue statement",
+                        "infinite loop",
+                        "loop efficiency"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U3_T2",
+                    "Topic": "Functions and Recursion",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "function prototype",
+                        "call by value",
+                        "call by reference",
+                        "recursion base case",
+                        "stack overhead",
+                        "return type",
+                        "parameter passing",
+                        "function scope",
+                        "recursive factorial",
+                        "recursive fibonacci",
+                        "tower of hanoi"
+                    ],
+                    "Core_Formulas": [
+                        "Factorial: n! = n × (n-1)!,  base: 0! = 1",
+                        "Fibonacci: F(n) = F(n-1) + F(n-2),  F(0)=0, F(1)=1"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "C_U4",
+            "Unit": "Unit IV: Arrays and Basic Algorithms",
+            "Topics": [
+                {
+                    "Topic_ID": "C_U4_T1",
+                    "Topic": "Arrays (1D and 2D)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "1d array declaration",
+                        "2d array matrix",
+                        "array indexing",
+                        "passing array to function",
+                        "string as character array",
+                        "string library functions strlen strcpy strcmp",
+                        "multi-dimensional array"
+                    ],
+                    "Core_Formulas": [
+                        "Address of arr[i] = base + i × sizeof(type)",
+                        "Address of arr[i][j] = base + (i×cols + j) × sizeof(type)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U4_T2",
+                    "Topic": "Structure, Union and Enumerated Data Types",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "struct declaration",
+                        "member access dot operator",
+                        "array of structures",
+                        "union memory sharing",
+                        "enum declaration",
+                        "self-referential structure",
+                        "typedef",
+                        "nested structure",
+                        "structure vs union"
+                    ],
+                    "Core_Formulas": [
+                        "sizeof(union) = sizeof(largest member)",
+                        "sizeof(struct) = sum of members + padding"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U4_T3",
+                    "Topic": "Basic Algorithms: Searching and Sorting",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "linear search",
+                        "binary search",
+                        "bubble sort",
+                        "insertion sort",
+                        "selection sort",
+                        "time complexity",
+                        "space complexity",
+                        "best case average case worst case"
+                    ],
+                    "Core_Formulas": [
+                        "Linear search: O(n) worst case",
+                        "Binary search: O(log n) worst case — requires sorted array",
+                        "Bubble sort: O(n²) worst, O(n) best (optimised)",
+                        "Insertion sort: O(n²) worst, O(n) best"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "C_U5",
+            "Unit": "Unit V: Pointers and File Handling",
+            "Topics": [
+                {
+                    "Topic_ID": "C_U5_T1",
+                    "Topic": "Pointers and Pointer Arithmetic",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "pointer declaration",
+                        "address operator &",
+                        "dereference operator *",
+                        "pointer arithmetic",
+                        "pointer to array",
+                        "pointer to function",
+                        "null pointer",
+                        "void pointer",
+                        "dangling pointer",
+                        "double pointer"
+                    ],
+                    "Core_Formulas": [
+                        "ptr++ moves by sizeof(*ptr) bytes",
+                        "p[i] ≡ *(p+i)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U5_T2",
+                    "Topic": "Dynamic Memory Allocation",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "malloc",
+                        "calloc",
+                        "realloc",
+                        "free",
+                        "heap memory",
+                        "memory leak",
+                        "dynamic arrays",
+                        "linked list concept"
+                    ],
+                    "Core_Formulas": [
+                        "malloc(n * sizeof(type)) — allocates n × sizeof(type) bytes, uninitialized",
+                        "calloc(n, sizeof(type)) — allocates and zero-initializes",
+                        "realloc(ptr, new_size) — resizes existing allocation"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U5_T3",
+                    "Topic": "File Handling",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "file modes r w a rb wb",
+                        "fopen",
+                        "fclose",
+                        "feof",
+                        "eof significance",
+                        "fprintf",
+                        "fscanf",
+                        "fgets",
+                        "fputs",
+                        "fread",
+                        "fwrite",
+                        "fseek",
+                        "ftell",
+                        "rewind"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "C_U5_T4",
+                    "Topic": "Preprocessors and Command-Line Arguments",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "macros define",
+                        "preprocessor directives",
+                        "include guard",
+                        "argc",
+                        "argv",
+                        "conditional compilation ifdef endif",
+                        "macro with arguments",
+                        "undef"
+                    ],
+                    "Core_Formulas": [
+                        "int main(int argc, char *argv[])  — argc=count, argv[]=argument strings"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Note": "Reconstructed from truncated user JSON + standard AKTU KCS-101T syllabus. No PYQs available — add from official papers once sourced.",
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 15,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

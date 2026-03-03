@@ -1,0 +1,768 @@
+{
+    "Subject_ID": "BEE_KEE101",
+    "Subject": "AKTU B.Tech Basic Electrical Engineering (BEE101/BEE201) - Semester I/II",
+    "Code": "KEE-101T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "BEE_U1",
+            "Unit": "Unit I: DC Circuits",
+            "Topics": [
+                {
+                    "Topic_ID": "BEE_U1_T1",
+                    "Topic": "Circuit Elements and Basic Laws",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ohm's law",
+                        "kirchhoff's current law kcl",
+                        "kirchhoff's voltage law kvl",
+                        "ideal voltage source",
+                        "ideal current source",
+                        "v-i characteristics",
+                        "unilateral elements",
+                        "bilateral elements",
+                        "linearity"
+                    ],
+                    "Core_Formulas": [
+                        "V = IR  (Ohm's Law)",
+                        "ΣI_in = ΣI_out  (KCL at a node)",
+                        "ΣV = 0  (KVL around a loop)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U1_T1_PYQ1",
+                            "Year": "2022",
+                            "Question": "Draw the V-I characteristics for ideal voltage source and ideal current source.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "v-i characteristics"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U1_T1_PYQ2",
+                            "Year": "2022",
+                            "Question": "Why is linearity important in circuits?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "linearity"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U1_T1_PYQ3",
+                            "Year": "2020",
+                            "Question": "What do you understand by unilateral and bilateral elements? Give examples.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "unilateral elements",
+                                "bilateral elements"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "BEE_U1_T2",
+                    "Topic": "Network Theorems and Analysis Methods",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "nodal analysis",
+                        "mesh analysis",
+                        "star-delta conversion",
+                        "thevenin's theorem",
+                        "norton's theorem",
+                        "superposition theorem",
+                        "maximum power transfer theorem"
+                    ],
+                    "Core_Formulas": [
+                        "V_th = open circuit voltage at terminals",
+                        "R_th = equivalent resistance looking into terminals (sources off)",
+                        "I_N = short circuit current at terminals",
+                        "P_max = V²_th / (4R_th)  (maximum power transfer)",
+                        "Star→Delta: R_ab = (R_a·R_b + R_b·R_c + R_c·R_a) / R_c"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U1_T2_PYQ1",
+                            "Year": "2020",
+                            "Question": "What is the utility of superposition theorem?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "superposition theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U1_T2_PYQ2",
+                            "Year": "2022",
+                            "Question": "Calculate equivalent resistance across terminals A and B using star-delta conversion for the given figure.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "star-delta conversion"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U1_T2_PYQ3",
+                            "Year": "2020",
+                            "Question": "Determine the current flowing through 5Ω resistance using Thevenin's theorem.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "thevenin's theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U1_T2_PYQ4",
+                            "Year": "2023",
+                            "Question": "Use nodal analysis to find the currents in various resistors of the given circuit.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "nodal analysis"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "BEE_U2",
+            "Unit": "Unit II: AC Circuits",
+            "Topics": [
+                {
+                    "Topic_ID": "BEE_U2_T1",
+                    "Topic": "AC Fundamentals and Single-Phase Circuits",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "sinusoidal waveform",
+                        "rms value",
+                        "average value",
+                        "form factor",
+                        "peak factor",
+                        "phasor representation",
+                        "impedance",
+                        "reactance",
+                        "power factor",
+                        "active power",
+                        "reactive power",
+                        "apparent power",
+                        "resonance",
+                        "q-factor",
+                        "bandwidth"
+                    ],
+                    "Core_Formulas": [
+                        "V_rms = V_m/√2",
+                        "Form factor = V_rms / V_avg = 1.11 (sinusoid)",
+                        "Z = R + j(X_L - X_C)  (impedance)",
+                        "ω₀ = 1/√(LC)  (resonant frequency)",
+                        "Q = ω₀L/R = 1/(ω₀CR)  (quality factor)",
+                        "P = VI cosφ,  Q = VI sinφ,  S = VI"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ1",
+                            "Year": "2022",
+                            "Question": "Why do we represent AC by sinusoidal waveform?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "sinusoidal waveform"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ2",
+                            "Year": "2022",
+                            "Question": "Why is the average power consumed in purely inductive circuit zero?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "inductive circuit",
+                                "reactive power"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ3",
+                            "Year": "2020",
+                            "Question": "Determine the form factor of i = 200 sin(157t + π/6).",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "form factor"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ4",
+                            "Year": "2020",
+                            "Question": "Explain the term 'Dynamic Impedance' in AC circuits.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "dynamic impedance",
+                                "resonance"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ5",
+                            "Year": "2020",
+                            "Question": "V1 = 60 sinθ and V2 = sin(θ - π/3). Derive expressions for (i) sum and (ii) difference of these voltages.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "phasor addition"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ6",
+                            "Year": "2022",
+                            "Question": "Determine resonant frequency, Q-factor, voltage and currents at resonance for the given tank circuit.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "resonance",
+                                "q-factor"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ7",
+                            "Year": "2023",
+                            "Question": "Why series resonant circuit is called an acceptor circuit and parallel resonant circuit a rejector circuit?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "series resonance",
+                                "parallel resonance"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ8",
+                            "Year": "2023",
+                            "Question": "For an AC circuit R=100Ω, L=1H, C=1μF. Calculate resonant frequency and Q-factor.",
+                            "Marks": 5,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "resonant frequency",
+                                "q-factor"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T1_PYQ9",
+                            "Year": "2023",
+                            "Question": "Define quality factor in series RLC circuit. Determine the half-power frequencies and resonant frequency.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "q-factor",
+                                "bandwidth",
+                                "half-power frequencies"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "BEE_U2_T2",
+                    "Topic": "Three-Phase AC Circuits",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "three-phase system",
+                        "star connection",
+                        "delta connection",
+                        "line voltage",
+                        "phase voltage",
+                        "line current",
+                        "phase current",
+                        "power in three-phase systems"
+                    ],
+                    "Core_Formulas": [
+                        "Star: V_L = √3 · V_Ph,  I_L = I_Ph",
+                        "Delta: V_L = V_Ph,  I_L = √3 · I_Ph",
+                        "P = √3 · V_L · I_L · cosφ  (3-phase power)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U2_T2_PYQ1",
+                            "Year": "2023",
+                            "Question": "Compare a single phase and three phase AC system.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "three-phase system"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T2_PYQ2",
+                            "Year": "2023",
+                            "Question": "Draw the phasor diagram and circuit diagram for 3-phase AC circuit in case of (a) STAR (b) DELTA.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "star connection",
+                                "delta connection"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U2_T2_PYQ3",
+                            "Year": "2023",
+                            "Question": "Three impedances of 5Ω each are supplied from 400V, 50Hz 3-phase source. Calculate line/phase current for star and delta connection.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "star delta",
+                                "three-phase numerical"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "BEE_U3",
+            "Unit": "Unit III: Transformers and Magnetic Circuits",
+            "Topics": [
+                {
+                    "Topic_ID": "BEE_U3_T1",
+                    "Topic": "Magnetic Circuits",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "mmf magnetomotive force",
+                        "reluctance",
+                        "flux",
+                        "magnetic materials",
+                        "b-h curve",
+                        "hysteresis loss",
+                        "eddy current loss"
+                    ],
+                    "Core_Formulas": [
+                        "MMF = NI  (in Ampere-turns)",
+                        "Reluctance S = l/(μ₀μᵣA)",
+                        "Φ = MMF / S  (analogous to I = V/R)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U3_T1_PYQ1",
+                            "Year": "2020",
+                            "Question": "How MMF is related to Reluctance. Explain.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "mmf",
+                                "reluctance"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T1_PYQ2",
+                            "Year": "2020",
+                            "Question": "Explain different types of Magnetic materials with examples.",
+                            "Marks": 10,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "magnetic materials",
+                                "b-h curve"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "BEE_U3_T2",
+                    "Topic": "Single-Phase Transformer",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "emf equation",
+                        "ideal transformer",
+                        "no-load phasor diagram",
+                        "voltage regulation",
+                        "transformer losses",
+                        "efficiency",
+                        "negative voltage regulation"
+                    ],
+                    "Core_Formulas": [
+                        "E = 4.44 f N Φ_m  (EMF equation)",
+                        "V₁/V₂ = N₁/N₂ = I₂/I₁  (turns ratio)",
+                        "VR = (V_no_load - V_full_load) / V_full_load × 100%",
+                        "η = (Output power) / (Output power + Iron loss + Copper loss)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ1",
+                            "Year": "2022",
+                            "Question": "What is the nature of load for negative voltage regulation in a transformer?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "voltage regulation",
+                                "capacitive load"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ2",
+                            "Year": "2022",
+                            "Question": "Draw the phasor diagram for an ideal transformer on no load.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "phasor diagram",
+                                "no-load transformer"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ3",
+                            "Year": "2020",
+                            "Question": "Define voltage regulation of a transformer.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "voltage regulation"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ4",
+                            "Year": "2023",
+                            "Question": "What do you mean by a transformer? How is EMF induced in a transformer? Explain.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "transformer emf equation"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ5",
+                            "Year": "2023",
+                            "Question": "Primary of 50Hz transformer at 440V has 200 turns. Find the secondary voltage if it has 50 turns.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "turns ratio",
+                                "transformer numerical"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U3_T2_PYQ6",
+                            "Year": "2023",
+                            "Question": "Why do losses take place in a transformer?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "transformer losses",
+                                "hysteresis",
+                                "eddy current"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "BEE_U4",
+            "Unit": "Unit IV: Electrical Machines",
+            "Topics": [
+                {
+                    "Topic_ID": "BEE_U4_T1",
+                    "Topic": "DC Machines",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "dc generator",
+                        "generated emf",
+                        "dc motor",
+                        "torque equation",
+                        "commutator",
+                        "applications of dc motors"
+                    ],
+                    "Core_Formulas": [
+                        "E = (PΦZN) / (60A)  (generated EMF in DC machine)",
+                        "T = (PΦZI_a) / (2πA)  (torque equation)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U4_T1_PYQ1",
+                            "Year": "2022",
+                            "Question": "What is the generated EMF in a DC generator?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "generated emf dc generator"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U4_T1_PYQ2",
+                            "Year": "2020",
+                            "Question": "Why is a commutator needed?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "commutator"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U4_T1_PYQ3",
+                            "Year": "2020",
+                            "Question": "Derive the expression of torque for DC motor. Also discuss the applications.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "torque equation",
+                                "dc motor applications"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "BEE_U4_T2",
+                    "Topic": "AC Machines (Synchronous and Induction Motors)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "synchronous motor",
+                        "doubly excited system",
+                        "induction motor",
+                        "synchronous speed",
+                        "poles and frequency relation"
+                    ],
+                    "Core_Formulas": [
+                        "N_s = 120f/P  (synchronous speed)",
+                        "Slip s = (N_s - N) / N_s"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U4_T2_PYQ1",
+                            "Year": "2022",
+                            "Question": "Why is a synchronous motor doubly excited?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "synchronous motor",
+                                "doubly excited"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U4_T2_PYQ2",
+                            "Year": "2020",
+                            "Question": "Give the expression of speed in terms of poles and frequency of supply.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "synchronous speed formula"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "BEE_U5",
+            "Unit": "Unit V: Electrical Installations and Batteries",
+            "Topics": [
+                {
+                    "Topic_ID": "BEE_U5_T1",
+                    "Topic": "Electrical Safety and Protection Devices",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 1,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "mcb miniature circuit breaker",
+                        "mccb molded case circuit breaker",
+                        "elcb earth leakage circuit breaker",
+                        "sfu switch fuse unit",
+                        "fuse",
+                        "electrical installation problems"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U5_T1_PYQ1",
+                            "Year": "2022",
+                            "Question": "What are the common problems that occur during electrical installations?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "electrical installation"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U5_T1_PYQ2",
+                            "Year": "2020",
+                            "Question": "Write full form of (i) MCB (ii) MCCB (iii) ELCB (iv) SFU.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "mcb",
+                                "mccb",
+                                "elcb",
+                                "sfu"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "BEE_U5_T2",
+                    "Topic": "Batteries and Their Characteristics",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "battery characteristics",
+                        "cell capacity",
+                        "ampere-hour efficiency",
+                        "watt-hour efficiency",
+                        "factors affecting battery capacity",
+                        "alkaline cell",
+                        "discharge and charge cycle"
+                    ],
+                    "Core_Formulas": [
+                        "Ah efficiency = (Discharge Ah) / (Charge Ah) × 100%",
+                        "Wh efficiency = (Discharge Wh) / (Charge Wh) × 100%"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "BEE_U5_T2_PYQ1",
+                            "Year": "2022",
+                            "Question": "Write any two battery characteristics. Define any one.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "battery characteristics"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U5_T2_PYQ2",
+                            "Year": "2020",
+                            "Question": "What are the factors that affect the battery capacity?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "battery capacity"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "BEE_U5_T2_PYQ3",
+                            "Year": "2020",
+                            "Question": "An alkaline cell is discharged at 4A for 12h (avg 1.2V). To restore, 3A for 20h (avg 1.44V) needed. Calculate Ah and Wh efficiencies.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "ampere-hour efficiency",
+                                "watt-hour efficiency"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 10,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

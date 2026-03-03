@@ -1,0 +1,695 @@
+{
+    "Subject_ID": "PHY_KAS101",
+    "Subject": "AKTU B.Tech Physics I (KAS-101T) - Semester I/II",
+    "Code": "KAS-101T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "PHY_U1",
+            "Unit": "Unit I: Relativistic Mechanics",
+            "Topics": [
+                {
+                    "Topic_ID": "PHY_U1_T1",
+                    "Topic": "Frame of Reference and Galilean Transformations",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "inertial frame",
+                        "non-inertial frame",
+                        "galilean transformation equations"
+                    ],
+                    "Core_Formulas": [
+                        "x' = x - vt",
+                        "y' = y,  z' = z,  t' = t  (Galilean)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U1_T2",
+                    "Topic": "Michelson-Morley Experiment",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ether hypothesis",
+                        "interferometer",
+                        "null result",
+                        "constancy of light speed"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U1_T2_PYQ1",
+                            "Year": "2021",
+                            "Question": "State Einstein's postulates of Special Theory of Relativity.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "einstein's postulates"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U1_T3",
+                    "Topic": "Einstein's Postulates and Lorentz Transformations",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "principle of relativity",
+                        "constancy of light speed",
+                        "lorentz transformation equations"
+                    ],
+                    "Core_Formulas": [
+                        "x' = γ(x - vt)",
+                        "t' = γ(t - vx/c²)",
+                        "γ = 1/√(1 - v²/c²)  (Lorentz factor)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U1_T3_PYQ1",
+                            "Year": "2021",
+                            "Question": "Show that space-time interval between two events remains invariant under Lorentz transformations.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "lorentz transformation",
+                                "space-time interval"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U1_T4",
+                    "Topic": "Relativistic Effects: Length Contraction and Time Dilation",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "proper length",
+                        "proper time",
+                        "length contraction",
+                        "time dilation",
+                        "twin paradox",
+                        "muon decay experiment"
+                    ],
+                    "Core_Formulas": [
+                        "L = L₀/γ  (length contraction)",
+                        "Δt = γΔt₀  (time dilation)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U1_T4_PYQ1",
+                            "Year": "2021",
+                            "Question": "What do you mean by time dilation? Explain with mathematical proof. Justify with experimental evidence to show it is a real effect.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "time dilation",
+                                "muon decay"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U1_T5",
+                    "Topic": "Relativistic Velocity Addition and Mass-Energy Equivalence",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "relativistic velocity addition",
+                        "variation of mass with velocity",
+                        "mass-energy equivalence"
+                    ],
+                    "Core_Formulas": [
+                        "u' = (u - v) / (1 - uv/c²)  (velocity addition)",
+                        "m = m₀/√(1 - v²/c²)  (relativistic mass)",
+                        "E = mc²",
+                        "E² = (pc)² + (m₀c²)²"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U1_T5_PYQ1",
+                            "Year": "2021",
+                            "Question": "Find the momentum of a photon having energy 1.00×10⁻¹⁷ J.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "mass-energy",
+                                "photon momentum"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "PHY_U2",
+            "Unit": "Unit II: Electromagnetic Field Theory",
+            "Topics": [
+                {
+                    "Topic_ID": "PHY_U2_T1",
+                    "Topic": "Maxwell's Equations and Displacement Current",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "displacement current",
+                        "maxwell's equations integral form",
+                        "maxwell's equations differential form"
+                    ],
+                    "Core_Formulas": [
+                        "∇·D = ρ  (Gauss's law)",
+                        "∇·B = 0  (no magnetic monopoles)",
+                        "∇×E = -∂B/∂t  (Faraday's law)",
+                        "∇×H = J + ∂D/∂t  (Ampere-Maxwell law)",
+                        "J_d = ε₀ ∂E/∂t  (displacement current density)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U2_T1_PYQ1",
+                            "Year": "2021",
+                            "Question": "What is Displacement Current?",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "displacement current"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "PHY_U2_T1_PYQ2",
+                            "Year": "2021",
+                            "Question": "Find the conduction and displacement current density for a solid with σ=10⁻³ S/m, εᵣ=2.5 and E=4.5×10⁻⁶ sin(10⁹t).",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "displacement current",
+                                "conduction current"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U2_T2",
+                    "Topic": "Electromagnetic Waves and Poynting Vector",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "plane electromagnetic waves",
+                        "wave equation in vacuum",
+                        "wave equation in conducting medium",
+                        "skin depth",
+                        "poynting vector",
+                        "poynting theorem"
+                    ],
+                    "Core_Formulas": [
+                        "δ = √(2/ωμσ)  (skin depth)",
+                        "S = (1/μ₀)(E × B)  (Poynting vector)",
+                        "∇²E = μ₀ε₀ ∂²E/∂t²  (wave equation in vacuum)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U2_T2_PYQ1",
+                            "Year": "2021",
+                            "Question": "Show that magnetic monopoles do not exist.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "magnetic monopoles",
+                                "maxwell's equations"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "PHY_U3",
+            "Unit": "Unit III: Quantum Mechanics",
+            "Topics": [
+                {
+                    "Topic_ID": "PHY_U3_T1",
+                    "Topic": "Wave-Particle Duality and de Broglie Hypothesis",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "de broglie matter waves",
+                        "wave-particle duality",
+                        "bohr's quantization rule",
+                        "phase velocity",
+                        "group velocity",
+                        "davisson-germer experiment"
+                    ],
+                    "Core_Formulas": [
+                        "λ = h/p = h/mv  (de Broglie wavelength)",
+                        "v_phase = ω/k",
+                        "v_group = dω/dk"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U3_T1_PYQ1",
+                            "Year": "2021",
+                            "Question": "Why are matter waves associated with a particle generated only when it is in motion?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "de broglie waves",
+                                "matter waves"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U3_T2",
+                    "Topic": "Heisenberg Uncertainty Principle and Wave Function",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "heisenberg uncertainty principle",
+                        "wave function psi",
+                        "probability density",
+                        "normalization"
+                    ],
+                    "Core_Formulas": [
+                        "Δx·Δp ≥ ħ/2",
+                        "ΔE·Δt ≥ ħ/2",
+                        "∫|ψ|² dV = 1  (normalization condition)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U3_T3",
+                    "Topic": "Schrödinger's Wave Equation and Particle in a Box",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "time-dependent schrodinger equation",
+                        "time-independent schrodinger equation",
+                        "particle in 1d infinite potential box",
+                        "eigenvalues",
+                        "eigenfunctions"
+                    ],
+                    "Core_Formulas": [
+                        "iħ ∂ψ/∂t = Ĥψ  (time-dependent Schrödinger)",
+                        "-(ħ²/2m) ∇²ψ + Vψ = Eψ  (time-independent)",
+                        "Eₙ = n²h²/8mL²  (particle in a box energy levels)",
+                        "ψₙ = √(2/L) sin(nπx/L)  (eigenfunctions)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U3_T3_PYQ1",
+                            "Year": "2021",
+                            "Question": "Find the two lowest permissible energy states for an electron confined in a 1D infinite potential box of width 3.5×10⁻⁹ m.",
+                            "Marks": 10,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "particle in a box",
+                                "energy levels"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "PHY_U4",
+            "Unit": "Unit IV: Wave Optics",
+            "Topics": [
+                {
+                    "Topic_ID": "PHY_U4_T1",
+                    "Topic": "Interference in Thin Films and Newton's Rings",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "coherent sources",
+                        "interference in thin film",
+                        "wedge-shaped film",
+                        "newton's rings",
+                        "refractive index of liquid",
+                        "wavelength determination"
+                    ],
+                    "Core_Formulas": [
+                        "2μt = (2n-1)λ/2  (bright fringes, reflected light)",
+                        "2μt = nλ  (dark fringes, reflected light)",
+                        "Dₙ² ∝ n  (Newton's rings diameter relation)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U4_T1_PYQ1",
+                            "Year": "2021",
+                            "Question": "Two independent sources of light cannot produce interference, why?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "coherence",
+                                "interference"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "PHY_U4_T1_PYQ2",
+                            "Year": "2021",
+                            "Question": "Calculate the thickness of a soap bubble film for constructive interference in reflected light. λ=5000Å, μ=1.45.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "thin film interference",
+                                "constructive interference"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U4_T2",
+                    "Topic": "Diffraction and Resolving Power",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "single slit diffraction",
+                        "diffraction grating",
+                        "grating spectra",
+                        "dispersive power",
+                        "rayleigh's criterion",
+                        "resolving power of grating"
+                    ],
+                    "Core_Formulas": [
+                        "(a+b)sinθ = nλ  (grating equation)",
+                        "R = λ/dλ = nN  (resolving power of grating)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U4_T2_PYQ1",
+                            "Year": "2021",
+                            "Question": "State Rayleigh criterion of Resolution. Also define resolving power.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "rayleigh criterion",
+                                "resolving power"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U4_T3",
+                    "Topic": "Polarization of Light",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "double refraction",
+                        "birefringence",
+                        "nicol prism",
+                        "plane polarized light",
+                        "circularly polarized light",
+                        "elliptically polarized light",
+                        "quarter-wave plate",
+                        "half-wave plate",
+                        "optical activity",
+                        "specific rotation"
+                    ],
+                    "Core_Formulas": [
+                        "S = αlc  (specific rotation: S, l=path length, c=concentration)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "PHY_U5",
+            "Unit": "Unit V: Laser and Fiber Optics",
+            "Topics": [
+                {
+                    "Topic_ID": "PHY_U5_T1",
+                    "Topic": "Laser: Principles and Einstein's Coefficients",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "spontaneous emission",
+                        "stimulated emission",
+                        "population inversion",
+                        "einstein's a and b coefficients",
+                        "metastable states",
+                        "3-level laser",
+                        "4-level laser"
+                    ],
+                    "Core_Formulas": [
+                        "A₂₁/B₂₁ = 8πhν³/c³  (ratio of Einstein coefficients)",
+                        "Population inversion: N₂ > N₁"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U5_T1_PYQ1",
+                            "Year": "2021",
+                            "Question": "Differentiate between spontaneous and stimulated emission.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "spontaneous emission",
+                                "stimulated emission"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U5_T2",
+                    "Topic": "Construction and Working of Lasers",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ruby laser",
+                        "he-ne laser",
+                        "optical resonator",
+                        "laser applications"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U5_T3",
+                    "Topic": "Optical Fibers: Principles and Parameters",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "total internal reflection",
+                        "acceptance angle",
+                        "numerical aperture",
+                        "step-index fiber",
+                        "graded-index fiber",
+                        "single-mode fiber",
+                        "multi-mode fiber"
+                    ],
+                    "Core_Formulas": [
+                        "NA = √(n₁² - n₂²)",
+                        "θ_acceptance = arcsin(NA)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U5_T3_PYQ1",
+                            "Year": "2021",
+                            "Question": "With the help of a well-labelled diagram, name the components of an optical fibre.",
+                            "Marks": 2,
+                            "Difficulty": 1,
+                            "Concept_Tags": [
+                                "optical fiber components"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "PHY_U5_T4",
+                    "Topic": "Fiber Characteristics: Attenuation and Dispersion",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "attenuation absorption",
+                        "scattering losses",
+                        "bending losses",
+                        "modal dispersion",
+                        "material dispersion",
+                        "waveguide dispersion",
+                        "bandwidth"
+                    ],
+                    "Core_Formulas": [
+                        "α (dB/km) = (10/L) log(Pᵢₙ/Pₒᵤₜ)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "PHY_U5_T4_PYQ1",
+                            "Year": "2021",
+                            "Question": "What do you understand by attenuation and dispersion in an optical fibre? A system uses 25 km fibre with 2.5 dB/km loss and input power 2500µW. Compute output power.",
+                            "Marks": 10,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "attenuation",
+                                "fiber optics numericals"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 17,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

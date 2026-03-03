@@ -1,0 +1,718 @@
+{
+    "Subject_ID": "MATH_KAS103",
+    "Subject": "AKTU B.Tech Mathematics I (KAS-103T) - Semester I",
+    "Code": "KAS-103T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "MATH1_U1",
+            "Unit": "Unit I: Differential Calculus – I",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH1_U1_T1",
+                    "Topic": "Successive Differentiation and Leibnitz's theorem",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "nth derivative",
+                        "leibnitz rule",
+                        "repeated differentiation",
+                        "differentiation formula"
+                    ],
+                    "Core_Formulas": [
+                        "Leibnitz rule: (uv)ⁿ = Σ(r=0 to n) ⁿCr · uⁿ⁻ʳ · vʳ"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U1_T1_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find the n-th derivative of arctan(x).",
+                            "Marks": 7,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "nth derivative",
+                                "arctan"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U1_T2",
+                    "Topic": "Limits, Continuity and Differentiability of multivariable functions",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "limit definition",
+                        "continuity condition",
+                        "partial derivatives",
+                        "differentiability test"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U1_T2_PYQ1",
+                            "Year": "2025",
+                            "Question": "What is the difference between total derivatives and partial derivatives?",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "partial derivatives",
+                                "total derivative"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U1_T3",
+                    "Topic": "Partial Differentiation and Euler's Theorem",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "partial derivatives",
+                        "homogeneous functions",
+                        "euler's theorem",
+                        "chain rule"
+                    ],
+                    "Core_Formulas": [
+                        "Euler's theorem: x·∂u/∂x + y·∂u/∂y = n·u  (for homogeneous function of degree n)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U1_T3_PYQ1",
+                            "Year": "2025",
+                            "Question": "If u=f(r) with r = √(x²+y²), prove ∂²u/∂x² + ∂²u/∂y² = f''(r) + (1/r)f'(r).",
+                            "Marks": 2,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "partial derivatives",
+                                "euler's theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U1_T4",
+                    "Topic": "Total Derivatives and Change of Variables",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "total differential",
+                        "chain rule",
+                        "jacobian",
+                        "coordinate transformation"
+                    ],
+                    "Core_Formulas": [
+                        "du = (∂u/∂x)dx + (∂u/∂y)dy + (∂u/∂z)dz"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U1_T5",
+                    "Topic": "Curve Tracing (Cartesian and Polar)",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "tangent",
+                        "normal",
+                        "curve sketching",
+                        "polar equations"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U1_T5_PYQ1",
+                            "Year": "2025",
+                            "Question": "Trace the curve y(a+x) = x(3a - x) in the xy-plane.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "curve tracing"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH1_U2",
+            "Unit": "Unit II: Differential Calculus – II",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH1_U2_T1",
+                    "Topic": "Taylor's and Maclaurin's Theorem",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "taylor series",
+                        "maclaurin series",
+                        "multivariable expansion",
+                        "error term"
+                    ],
+                    "Core_Formulas": [
+                        "f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ...",
+                        "f(x,y) ≈ f(a,b) + [(x-a)fₓ + (y-b)f_y] + (1/2!)[(x-a)²fₓₓ + 2(x-a)(y-b)fₓ_y + (y-b)²f_yy]"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U2_T1_PYQ1",
+                            "Year": "2023",
+                            "Question": "Expand f(x,y) = √(xy) about (1,1) up to second degree terms.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "taylor series",
+                                "multivariable"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U2_T2",
+                    "Topic": "Jacobian and Error Approximation",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "jacobian determinant",
+                        "error propagation",
+                        "linear approximation",
+                        "function transformation"
+                    ],
+                    "Core_Formulas": [
+                        "J = ∂(u,v,w)/∂(x,y,z) = |∂u/∂x  ∂u/∂y  ∂u/∂z; ∂v/∂x  ∂v/∂y  ∂v/∂z; ∂w/∂x  ∂w/∂y  ∂w/∂z|"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U2_T2_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find the Jacobian ∂(x,y,z)/∂(u,v,w) for u=xyz, v=x²+y²+z², w=x+y+z.",
+                            "Marks": 3,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "jacobian"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U2_T2_PYQ2",
+                            "Year": "2023",
+                            "Question": "If each side of a box is measured with 1% error, find the percentage error in volume.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "error approximation"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U2_T3",
+                    "Topic": "Extrema of Multivariable Functions (Lagrange Multipliers)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "critical points",
+                        "hessian",
+                        "stationary points",
+                        "lagrange multipliers"
+                    ],
+                    "Core_Formulas": [
+                        "∇f = λ∇g  (Lagrange condition)",
+                        "D = fₓₓ·f_yy - (fₓ_y)²  (second derivative test discriminant)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U2_T3_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find the maxima and minima of f = sin x + sin y + sin(x+y).",
+                            "Marks": 3,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "maxima minima"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U2_T3_PYQ2",
+                            "Year": "2023",
+                            "Question": "A box open at top has volume 32 cubic units. Using Lagrange multipliers, find dimensions that minimize material.",
+                            "Marks": 7,
+                            "Difficulty": 5,
+                            "Concept_Tags": [
+                                "lagrange multipliers",
+                                "optimization"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH1_U3",
+            "Unit": "Unit III: Matrix Algebra",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH1_U3_T1",
+                    "Topic": "Matrices and Rank (linear systems)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "matrix types",
+                        "rank",
+                        "system consistency",
+                        "gaussian elimination"
+                    ],
+                    "Core_Formulas": [
+                        "Rank = number of non-zero rows in row echelon form",
+                        "Consistency: if rank(A) = rank([A|B]) → consistent"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U3_T1_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find two non-singular matrices P and Q such that PAQ is in normal form, where A = [[1,3,6,-1],[1,4,5,1],[1,5,4,3]].",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "matrix rank",
+                                "normal form"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U3_T2",
+                    "Topic": "Eigenvalues and Eigenvectors (Diagonalization)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "eigenvalues",
+                        "eigenvectors",
+                        "characteristic equation",
+                        "matrix diagonalization"
+                    ],
+                    "Core_Formulas": [
+                        "det(A - λI) = 0  (characteristic equation)",
+                        "(A - λI)X = 0  (eigenvector equation)",
+                        "A = P D P⁻¹  (diagonalization)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U3_T2_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find eigenvalues and eigenvectors of A = [[2,-1,1],[-1,2,-1],[1,-1,2]].",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "eigenvalues",
+                                "eigenvectors"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U3_T2_PYQ2",
+                            "Year": "2023",
+                            "Question": "Find the eigenvalues and corresponding eigenvectors of A = [[-1,-1,-1],[2,3,4],[2,1,1]].",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "eigenvalues",
+                                "eigenvectors"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U3_T3",
+                    "Topic": "Cayley–Hamilton Theorem and Matrix Inversion",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "cayley-hamilton theorem",
+                        "matrix inverse",
+                        "polynomial identity"
+                    ],
+                    "Core_Formulas": [
+                        "Every square matrix satisfies its own characteristic equation",
+                        "A⁻¹ = (1/det(A)) adj(A)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U3_T3_PYQ1",
+                            "Year": "2023",
+                            "Question": "Verify Cayley-Hamilton theorem for A = [[1,1,2],[1,2,1],[2,1,1]] and find its inverse.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "cayley-hamilton"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U3_T4",
+                    "Topic": "Hermitian and Unitary Matrices",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "hermitian matrix",
+                        "skew-hermitian",
+                        "unitary matrix",
+                        "matrix properties"
+                    ],
+                    "Core_Formulas": [
+                        "Hermitian: A = Aᴴ  (conjugate transpose)",
+                        "Unitary: A·Aᴴ = I"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U3_T4_PYQ1",
+                            "Year": "2023",
+                            "Question": "If A is Hermitian, show that iA is skew-Hermitian.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "hermitian"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH1_U4",
+            "Unit": "Unit IV: Multiple Integrals",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH1_U4_T1",
+                    "Topic": "Double and Triple Integrals (Fubini's Theorem)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "double integral",
+                        "triple integral",
+                        "change order of integration",
+                        "iterated integrals"
+                    ],
+                    "Core_Formulas": [
+                        "∬f(x,y)dA = ∫[a to b]∫[c to d] f(x,y) dy dx",
+                        "Fubini: order of integration can be swapped under continuity"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U4_T1_PYQ1",
+                            "Year": "2025",
+                            "Question": "Change the order of integration and evaluate ∬(x²+y²) dx dy over the given region.",
+                            "Marks": 4,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "double integral",
+                                "change order"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U4_T2",
+                    "Topic": "Applications (Areas, Volumes, Beta/Gamma functions)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "area by integration",
+                        "surface area",
+                        "volume of revolution",
+                        "beta function",
+                        "gamma function",
+                        "dirichlet's integral"
+                    ],
+                    "Core_Formulas": [
+                        "Β(m,n) = ∫₀¹ xᵐ⁻¹(1-x)ⁿ⁻¹ dx = Γ(m)Γ(n)/Γ(m+n)",
+                        "Γ(n) = (n-1)!  for positive integers",
+                        "Γ(1/2) = √π"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U4_T2_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find the area inside r=2a cosθ and outside r=a.",
+                            "Marks": 4,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "polar area"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U4_T2_PYQ2",
+                            "Year": "2025",
+                            "Question": "Using Dirichlet's theorem, evaluate ∭xyz dx dy dz over x²+y²+z²=1.",
+                            "Marks": 4,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "dirichlet integral",
+                                "beta gamma"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH1_U5",
+            "Unit": "Unit V: Vector Calculus",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH1_U5_T1",
+                    "Topic": "Gradient, Divergence and Curl",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "gradient",
+                        "divergence",
+                        "curl",
+                        "irrotational fields",
+                        "solenoidal fields"
+                    ],
+                    "Core_Formulas": [
+                        "∇f = (∂f/∂x)i + (∂f/∂y)j + (∂f/∂z)k",
+                        "∇·F = ∂Fₓ/∂x + ∂F_y/∂y + ∂F_z/∂z",
+                        "∇×F = |i  j  k; ∂/∂x  ∂/∂y  ∂/∂z; Fₓ  F_y  F_z|"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U5_T1_PYQ1",
+                            "Year": "2025",
+                            "Question": "Prove that curl(r⃗)=0, where r⃗=xi+yj+zk.",
+                            "Marks": 5,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "curl",
+                                "vector identity"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U5_T1_PYQ2",
+                            "Year": "2024",
+                            "Question": "Show that ∇·(∇(rⁿ)) = n(n+1)r^{n-2}.",
+                            "Marks": 5,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "divergence",
+                                "gradient"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U5_T2",
+                    "Topic": "Vector Identities and Field Properties",
+                    "Importance_Weight": 3,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "vector identities",
+                        "linearity of curl",
+                        "directional derivative"
+                    ],
+                    "Core_Formulas": [
+                        "Directional derivative = ∇f · â  (unit direction vector)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U5_T2_PYQ1",
+                            "Year": "2025",
+                            "Question": "Find the directional derivative of f=xyz at P(1,1,3) in direction of outward normal to sphere x²+y²+z²=11 at P.",
+                            "Marks": 3,
+                            "Difficulty": 3,
+                            "Concept_Tags": [
+                                "directional derivative"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH1_U5_T3",
+                    "Topic": "Line, Surface and Volume Integrals (Green, Stokes, Gauss)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "line integral",
+                        "surface integral",
+                        "divergence theorem",
+                        "stokes' theorem",
+                        "flux",
+                        "circulation"
+                    ],
+                    "Core_Formulas": [
+                        "Gauss: ∯F·n dS = ∭∇·F dV",
+                        "Stokes: ∮F·dr = ∬(∇×F)·n dS",
+                        "Green's: ∮(Pdx+Qdy) = ∬(∂Q/∂x - ∂P/∂y) dA"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH1_U5_T3_PYQ1",
+                            "Year": "2023",
+                            "Question": "Apply Gauss's divergence theorem for F=4xi-2y²j+z²k through cylinder x²+y²=4, 0≤z≤3.",
+                            "Marks": 7,
+                            "Difficulty": 5,
+                            "Concept_Tags": [
+                                "divergence theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH1_U5_T3_PYQ2",
+                            "Year": "2023",
+                            "Question": "Apply Stokes' theorem for F=y²i+xzj-(x+y)k, C is triangle (0,0,0),(1,0,0),(1,1,0).",
+                            "Marks": 7,
+                            "Difficulty": 5,
+                            "Concept_Tags": [
+                                "stokes theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 17,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

@@ -1,0 +1,527 @@
+{
+    "Subject_ID": "ELEC_KEC101",
+    "Subject": "AKTU B.Tech Basic Electronics Engineering (KEC-101T) - Semester I/II",
+    "Code": "KEC-101T",
+    "Session_Effective": "2025-26",
+    "Units": [
+        {
+            "Unit_ID": "ELEC_U1",
+            "Unit": "Unit I: Semiconductor Diodes and Applications",
+            "Topics": [
+                {
+                    "Topic_ID": "ELEC_U1_T1",
+                    "Topic": "Semiconductor Physics",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "intrinsic semiconductor",
+                        "extrinsic semiconductor",
+                        "n-type doping",
+                        "p-type doping",
+                        "charge carriers",
+                        "electrons",
+                        "holes",
+                        "drift current",
+                        "diffusion current",
+                        "mass action law"
+                    ],
+                    "Core_Formulas": [
+                        "n·p = nᵢ²  (mass action law)",
+                        "J = J_drift + J_diffusion",
+                        "J_drift = qnμₙE + qpμₚE"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U1_T2",
+                    "Topic": "PN Junction Diode",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "depletion region",
+                        "barrier potential",
+                        "forward bias",
+                        "reverse bias",
+                        "v-i characteristics",
+                        "breakdown voltage",
+                        "knee voltage",
+                        "ideal diode"
+                    ],
+                    "Core_Formulas": [
+                        "I = I₀(e^(V/ηV_T) - 1)  (diode equation)",
+                        "V_T = kT/q ≈ 26 mV at 300K  (thermal voltage)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U1_T3",
+                    "Topic": "Diode Applications",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "half-wave rectifier",
+                        "full-wave rectifier",
+                        "bridge rectifier",
+                        "ripple factor",
+                        "piv peak inverse voltage",
+                        "clipper circuits",
+                        "clamper circuits",
+                        "zener diode",
+                        "zener breakdown",
+                        "avalanche breakdown",
+                        "zener voltage regulator"
+                    ],
+                    "Core_Formulas": [
+                        "Ripple factor γ = V_r(rms) / V_dc",
+                        "η (efficiency) = P_dc / P_ac",
+                        "HWR: V_dc = V_m/π,  FWR: V_dc = 2V_m/π",
+                        "PIV (bridge rectifier) = V_m"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "ELEC_U2",
+            "Unit": "Unit II: Bipolar Junction Transistors (BJT)",
+            "Topics": [
+                {
+                    "Topic_ID": "ELEC_U2_T1",
+                    "Topic": "BJT Fundamentals",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "npn transistor",
+                        "pnp transistor",
+                        "emitter",
+                        "base",
+                        "collector",
+                        "ce configuration",
+                        "cb configuration",
+                        "cc configuration",
+                        "current gain alpha",
+                        "current gain beta",
+                        "input characteristics",
+                        "output characteristics",
+                        "cutoff region",
+                        "active region",
+                        "saturation region"
+                    ],
+                    "Core_Formulas": [
+                        "β = I_C / I_B  (current gain CE)",
+                        "α = I_C / I_E  (current gain CB)",
+                        "β = α / (1 - α)",
+                        "I_E = I_C + I_B"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U2_T2",
+                    "Topic": "BJT Biasing and Amplifiers",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "dc load line",
+                        "q-point operating point",
+                        "fixed bias",
+                        "collector-to-base bias",
+                        "voltage divider bias",
+                        "stability factor",
+                        "thermal runaway",
+                        "ce amplifier",
+                        "voltage gain",
+                        "frequency response",
+                        "coupling capacitors",
+                        "bypass capacitors"
+                    ],
+                    "Core_Formulas": [
+                        "Voltage gain A_v = -β·R_C / r_e  (CE amplifier)",
+                        "Stability factor S = ΔI_C / ΔI_CO",
+                        "r_e = 26mV / I_E  (dynamic emitter resistance)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "ELEC_U3",
+            "Unit": "Unit III: Field Effect Transistors (FET)",
+            "Topics": [
+                {
+                    "Topic_ID": "ELEC_U3_T1",
+                    "Topic": "JFET (Junction Field Effect Transistor)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "n-channel jfet",
+                        "p-channel jfet",
+                        "source",
+                        "drain",
+                        "gate",
+                        "pinch-off voltage",
+                        "drain characteristics",
+                        "transfer characteristics",
+                        "transconductance gm",
+                        "drain resistance rd",
+                        "amplification factor mu"
+                    ],
+                    "Core_Formulas": [
+                        "I_D = I_DSS (1 - V_GS/V_P)²  (Shockley's equation)",
+                        "g_m = ΔI_D / ΔV_GS  (transconductance)",
+                        "μ = g_m · r_d  (amplification factor)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U3_T2",
+                    "Topic": "MOSFET (Metal Oxide Semiconductor FET)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "enhancement type mosfet",
+                        "depletion type mosfet",
+                        "n-mos",
+                        "p-mos",
+                        "threshold voltage vt",
+                        "ohmic region",
+                        "saturation region",
+                        "cutoff region",
+                        "mosfet as switch",
+                        "cmos technology"
+                    ],
+                    "Core_Formulas": [
+                        "I_D = k(V_GS - V_T)²  (saturation, enhancement MOSFET)",
+                        "V_T — threshold voltage (device parameter)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "ELEC_U4",
+            "Unit": "Unit IV: Operational Amplifiers (Op-Amp)",
+            "Topics": [
+                {
+                    "Topic_ID": "ELEC_U4_T1",
+                    "Topic": "Op-Amp Fundamentals",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ideal op-amp",
+                        "inverting input",
+                        "non-inverting input",
+                        "infinite input impedance",
+                        "zero output impedance",
+                        "infinite open loop gain",
+                        "virtual ground concept",
+                        "cmrr common mode rejection ratio",
+                        "slew rate",
+                        "offset voltage"
+                    ],
+                    "Core_Formulas": [
+                        "CMRR = A_differential / A_common_mode  (in dB: 20 log(CMRR))",
+                        "Slew Rate = ΔV_out / Δt  (V/μs)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U4_T2",
+                    "Topic": "Op-Amp Applications",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "inverting amplifier",
+                        "non-inverting amplifier",
+                        "voltage follower unity gain buffer",
+                        "summing amplifier",
+                        "difference amplifier",
+                        "integrator",
+                        "differentiator",
+                        "comparator",
+                        "schmitt trigger"
+                    ],
+                    "Core_Formulas": [
+                        "Inverting amp gain = -R_f / R_in",
+                        "Non-inverting amp gain = 1 + R_f / R_in",
+                        "Summing amp: V_out = -(R_f/R₁·V₁ + R_f/R₂·V₂ + ...)",
+                        "Integrator: V_out = -(1/RC)∫V_in dt"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "ELEC_U5",
+            "Unit": "Unit V: Digital Electronics Fundamentals",
+            "Topics": [
+                {
+                    "Topic_ID": "ELEC_U5_T1",
+                    "Topic": "Number Systems and Logic Gates",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 2,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "binary number system",
+                        "decimal number system",
+                        "octal number system",
+                        "hexadecimal number system",
+                        "bcd code",
+                        "gray code",
+                        "and gate",
+                        "or gate",
+                        "not gate",
+                        "nand gate",
+                        "nor gate",
+                        "xor gate",
+                        "xnor gate",
+                        "truth tables",
+                        "universal gates"
+                    ],
+                    "Core_Formulas": [
+                        "NAND and NOR are universal gates (can implement any Boolean function)",
+                        "XOR: Y = A⊕B = A'B + AB'"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U5_T2",
+                    "Topic": "Boolean Algebra and Logic Simplification",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "boolean laws",
+                        "de morgan's theorems",
+                        "sum of products sop",
+                        "product of sums pos",
+                        "karnaugh map k-map",
+                        "2-variable k-map",
+                        "3-variable k-map",
+                        "4-variable k-map",
+                        "don't care conditions",
+                        "logic minimization"
+                    ],
+                    "Core_Formulas": [
+                        "De Morgan's 1st: (A+B)' = A'·B'",
+                        "De Morgan's 2nd: (A·B)' = A'+B'"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "ELEC_U5_T3",
+                    "Topic": "Combinational Logic Circuits",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "half adder",
+                        "full adder",
+                        "half subtractor",
+                        "full subtractor",
+                        "multiplexer mux",
+                        "demultiplexer demux",
+                        "encoder",
+                        "decoder",
+                        "magnitude comparator"
+                    ],
+                    "Core_Formulas": [
+                        "Full adder: Sum = A⊕B⊕C_in,  Carry = AB + BC_in + AC_in"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Note": "UNVERIFIED — based on 2025-26 third-party portal data. No PYQs available yet. Add PYQs once official AKTU papers are sourced.",
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 12,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}

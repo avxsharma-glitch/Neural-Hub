@@ -1,0 +1,588 @@
+{
+    "Subject_ID": "MATH_KAS203",
+    "Subject": "AKTU B.Tech Mathematics II (KAS-203T) - Semester II",
+    "Code": "KAS-203T",
+    "Session_Effective": "2020-21",
+    "Units": [
+        {
+            "Unit_ID": "MATH2_U1",
+            "Unit": "Unit I: Ordinary Differential Equations",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH2_U1_T1",
+                    "Topic": "Linear Differential Equations of n-th Order",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "homogeneous ode",
+                        "constant coefficients",
+                        "complementary function",
+                        "particular integral"
+                    ],
+                    "Core_Formulas": [
+                        "CF: try y = eᵐˣ → auxiliary equation",
+                        "PI for eᵃˣ: PI = eᵃˣ/f(a)  if f(a)≠0",
+                        "PI for xⁿ: PI = [1/f(D)] xⁿ using binomial expansion"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U1_T1_PYQ1",
+                            "Year": "2023",
+                            "Question": "Solve (D²+2D-3)y = eˣ+x, y(0)=2, y'(0)=8.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "linear ode",
+                                "particular integral"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U1_T2",
+                    "Topic": "Simultaneous Linear Differential Equations",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "coupled odes",
+                        "elimination method",
+                        "eigen method",
+                        "initial conditions"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U1_T3",
+                    "Topic": "Method of Variation of Parameters",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "variation of parameters",
+                        "particular solution",
+                        "wronskian"
+                    ],
+                    "Core_Formulas": [
+                        "y_p = u₁y₁ + u₂y₂ where u₁' = -y₂R/W, u₂' = y₁R/W",
+                        "W = y₁y₂' - y₂y₁'  (Wronskian)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U1_T3_PYQ1",
+                            "Year": "2023",
+                            "Question": "Solve d²y/dx² + y = cosec x using variation of parameters.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "variation of parameters",
+                                "wronskian"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U1_T4",
+                    "Topic": "Changing Variables in ODEs",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "euler-cauchy equation",
+                        "variable substitution",
+                        "reduction to constant coefficients"
+                    ],
+                    "Core_Formulas": [
+                        "Euler-Cauchy: x² y'' + axy' + by = f(x), substitute x = eᵗ"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U1_T4_PYQ1",
+                            "Year": "2023",
+                            "Question": "Solve x²d²y/dx² + 2x dy/dx - 12y = x³ log x by changing independent variable.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "euler-cauchy",
+                                "substitution"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH2_U2",
+            "Unit": "Unit II: Series Solution and Special Functions",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH2_U2_T1",
+                    "Topic": "Series Solution of ODEs (Frobenius method)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "power series solution",
+                        "frobenius series",
+                        "indicial equation",
+                        "radius of convergence"
+                    ],
+                    "Core_Formulas": [
+                        "y = Σ aₙ xⁿ⁺ʳ  (Frobenius form)",
+                        "Indicial equation: r(r-1) + p₀r + q₀ = 0"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U2_T1_PYQ1",
+                            "Year": "2023",
+                            "Question": "Solve x²y'' + xy' - (1+x²)y = 0 using Frobenius method.",
+                            "Marks": 7,
+                            "Difficulty": 5,
+                            "Concept_Tags": [
+                                "frobenius method",
+                                "series solution"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U2_T2",
+                    "Topic": "Bessel's Equation and Functions",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "bessel's equation",
+                        "bessel functions jn and yn",
+                        "recurrence relations",
+                        "orthogonality"
+                    ],
+                    "Core_Formulas": [
+                        "x²y'' + xy' + (x²-n²)y = 0  (Bessel's equation)",
+                        "Jₙ(x) = Σ [(-1)ᵐ / (m! Γ(m+n+1))] (x/2)^(2m+n)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U2_T3",
+                    "Topic": "Legendre's Equation and Polynomials",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "legendre's equation",
+                        "legendre polynomials pn",
+                        "orthogonality",
+                        "rodrigues' formula"
+                    ],
+                    "Core_Formulas": [
+                        "(1-x²)y'' - 2xy' + n(n+1)y = 0  (Legendre's equation)",
+                        "Pₙ(x) = (1/2ⁿn!) dⁿ/dxⁿ [(x²-1)ⁿ]  (Rodrigues' formula)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH2_U3",
+            "Unit": "Unit III: Laplace Transform",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH2_U3_T1",
+                    "Topic": "Laplace Transform Definition and Properties",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "laplace transform",
+                        "existence theorem",
+                        "linearity",
+                        "initial/final value theorems"
+                    ],
+                    "Core_Formulas": [
+                        "L{f(t)} = ∫₀^∞ e⁻ˢᵗ f(t) dt",
+                        "L{eᵃᵗ f(t)} = F(s-a)  (first shifting theorem)",
+                        "L{tⁿ} = n!/sⁿ⁺¹",
+                        "L{sin at} = a/(s²+a²)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U3_T1_PYQ1",
+                            "Year": "2023",
+                            "Question": "Explain the first shifting property of Laplace transform with example.",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "shifting theorem"
+                            ],
+                            "AI_Solution_Generated": false
+                        },
+                        {
+                            "PYQ_ID": "MATH2_U3_T1_PYQ2",
+                            "Year": "2023",
+                            "Question": "Find L{x³ sin x} and prove ∫₀^∞ e⁻ˣ x³ sin x dx = 0.",
+                            "Marks": 7,
+                            "Difficulty": 4,
+                            "Concept_Tags": [
+                                "laplace transform",
+                                "integration"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U3_T2",
+                    "Topic": "Inverse Laplace and Convolution Theorem",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "inverse laplace transform",
+                        "partial fraction decomposition",
+                        "convolution integral",
+                        "convolution property"
+                    ],
+                    "Core_Formulas": [
+                        "L⁻¹{F(s)} using partial fractions",
+                        "L{(f*g)(t)} = F(s)·G(s)  (convolution theorem)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "MATH2_U3_T2_PYQ1",
+                            "Year": "2023",
+                            "Question": "Find the inverse Laplace transform of 1/(s²+2s+2).",
+                            "Marks": 2,
+                            "Difficulty": 2,
+                            "Concept_Tags": [
+                                "inverse laplace",
+                                "partial fractions"
+                            ],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U3_T3",
+                    "Topic": "Applications to Differential Equations",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "ode solving by laplace",
+                        "circuit applications",
+                        "initial conditions in s-domain"
+                    ],
+                    "Core_Formulas": [
+                        "L{y'} = sY(s) - y(0)",
+                        "L{y''} = s²Y(s) - sy(0) - y'(0)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH2_U4",
+            "Unit": "Unit IV: Fourier Series and Partial Differential Equations",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH2_U4_T1",
+                    "Topic": "Fourier Series (Periodic Functions)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "fourier series",
+                        "dirichlet conditions",
+                        "half-range expansions",
+                        "gibbs phenomenon"
+                    ],
+                    "Core_Formulas": [
+                        "f(x) = a₀/2 + Σ [aₙcos(nπx/L) + bₙsin(nπx/L)]",
+                        "a₀ = (1/L)∫₋L^L f(x)dx",
+                        "aₙ = (1/L)∫₋L^L f(x)cos(nπx/L)dx",
+                        "bₙ = (1/L)∫₋L^L f(x)sin(nπx/L)dx"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U4_T2",
+                    "Topic": "First-order PDE (Lagrange's Method)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "first-order pde",
+                        "lagrange's linear equations",
+                        "method of characteristics"
+                    ],
+                    "Core_Formulas": [
+                        "Pp + Qq = R → auxiliary eq: dx/P = dy/Q = dz/R"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U4_T3",
+                    "Topic": "Second-order PDE (constant coefficients)",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "wave equation",
+                        "heat equation",
+                        "classification hyperbolic parabolic"
+                    ],
+                    "Core_Formulas": [
+                        "Classification by B²-4AC: hyperbolic(>0), parabolic(=0), elliptic(<0)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Unit_ID": "MATH2_U5",
+            "Unit": "Unit V: Applications of Partial Differential Equations",
+            "Topics": [
+                {
+                    "Topic_ID": "MATH2_U5_T1",
+                    "Topic": "Classification of PDEs and Separation of Variables",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 3,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "parabolic/hyperbolic/elliptic",
+                        "separation of variables",
+                        "boundary conditions"
+                    ],
+                    "Core_Formulas": [],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U5_T2",
+                    "Topic": "Wave and Heat Equations (1D and 2D)",
+                    "Importance_Weight": 5,
+                    "Difficulty_Score": 5,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "1d wave equation",
+                        "1d heat equation",
+                        "2d wave/heat equations",
+                        "solution by fourier series"
+                    ],
+                    "Core_Formulas": [
+                        "1D Wave: ∂²u/∂t² = c² ∂²u/∂x²",
+                        "1D Heat: ∂u/∂t = α² ∂²u/∂x²"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                },
+                {
+                    "Topic_ID": "MATH2_U5_T3",
+                    "Topic": "Laplace Equation (2D) and Transmission Line Equation",
+                    "Importance_Weight": 4,
+                    "Difficulty_Score": 4,
+                    "Mastery_Score": 0,
+                    "Frequency_Score": 0,
+                    "Exam_Priority_Score": 0,
+                    "Weak_Flag": false,
+                    "Revision_Count": 0,
+                    "Last_Revision_Date": null,
+                    "Concept_Tags": [
+                        "2d laplace equation",
+                        "potential flow",
+                        "telegrapher's equation",
+                        "engineering applications"
+                    ],
+                    "Core_Formulas": [
+                        "2D Laplace: ∂²u/∂x² + ∂²u/∂y² = 0 (∇²u = 0)"
+                    ],
+                    "PYQs": [
+                        {
+                            "PYQ_ID": "",
+                            "Year": "",
+                            "Marks": 0,
+                            "Difficulty": 0,
+                            "Concept_Tags": [],
+                            "AI_Solution_Generated": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "Next_Topic_Recommendation_Logic": "Topic with MAX(Importance_Weight × (1 - Mastery_Score))",
+        "Weak_Cluster_Logic": "Mastery_Score < 0.6 AND Importance_Weight >= 4",
+        "Radar_Axes": [
+            "Unit I",
+            "Unit II",
+            "Unit III",
+            "Unit IV",
+            "Unit V"
+        ],
+        "Total_Topics": 17,
+        "Total_Units": 5,
+        "AI_Required_For_Core_Logic": false
+    }
+}
