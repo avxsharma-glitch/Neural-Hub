@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin System - NEURAL HUB // AVX</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <style>
+        .admin-header {
+            background-color: var(--alert);
+            color: white;
+            padding: 8px 32px;
+            font-size: 0.85rem;
+            font-family: var(--font-code);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 24px;
+        }
+
+        .form-panel {
+            background: var(--bg-surface);
+            padding: 24px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th,
+        .data-table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .data-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab {
+            padding: 12px 16px;
+            cursor: pointer;
+            color: var(--text-muted);
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+        }
+
+        .tab.active {
+            color: var(--text-primary);
+            border-bottom-color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="admin-header">
+        <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="vertical-align: middle; margin-right: 8px;">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                </path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            SYSTEM ADMINISTRATOR PRIVILEGES ACTIVE</div>
+        <a href="login.html" style="color:white; text-decoration:underline;">Terminate Session</a>
+    </div>
+
+    <div class="app-container" style="height: calc(100vh - 34px);">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                System Controls
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-item active">Curriculum Engineering</div>
+                <div class="nav-item">PYQ Deployment</div>
+                <div class="nav-item">Platform Telemetry</div>
+                <div class="nav-item">User Access Roles</div>
+            </nav>
+        </aside>
+
+        <main class="main-wrapper" style="padding: 32px; overflow-y: auto;">
+            <h1 style="margin-bottom: 8px;">Curriculum Engineering</h1>
+            <p class="text-muted" style="margin-bottom: 32px;">Manage system syllabus hierarchy (Subjects > Units >
+                Topics)</p>
+
+            <div class="tabs">
+                <div class="tab active">Subjects & Units</div>
+                <div class="tab">Topic Node Editor</div>
+            </div>
+
+            <div class="admin-grid">
+
+                <!-- Data Entry Form -->
+                <div class="form-panel">
+                    <h3 style="margin-bottom: 24px;">Initialize Subject Node</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Subject Code</label>
+                            <input type="text" placeholder="e.g. KAS-101T">
+                        </div>
+                        <div class="form-group">
+                            <label>Designation (Name)</label>
+                            <input type="text" placeholder="Engineering Physics">
+                        </div>
+                        <div class="form-group">
+                            <label>Branch Affiliation</label>
+                            <select>
+                                <option>Common (All Branches)</option>
+                                <option>Computer Science</option>
+                                <option>Mechanical Eng</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Description / Objective</label>
+                            <textarea rows="4" placeholder="Subject overview..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Create Subject Node</button>
+                    </form>
+                </div>
+
+                <!-- Data Table -->
+                <div class="form-panel">
+                    <h3 style="margin-bottom: 24px;">Active Subjects Registry</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Subject Designation</th>
+                                <th>Units</th>
+                                <th>Topics</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="font-code text-accent">KAS-101T</span></td>
+                                <td>Engineering Physics</td>
+                                <td>5</td>
+                                <td>42</td>
+                                <td><button class="btn btn-ghost" style="padding:4px;">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="font-code text-accent">KAS-102T</span></td>
+                                <td>Engineering Chemistry</td>
+                                <td>5</td>
+                                <td>38</td>
+                                <td><button class="btn btn-ghost" style="padding:4px;">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="font-code text-accent">KAS-103T</span></td>
+                                <td>Engineering Mathematics I</td>
+                                <td>5</td>
+                                <td>45</td>
+                                <td><button class="btn btn-ghost" style="padding:4px;">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

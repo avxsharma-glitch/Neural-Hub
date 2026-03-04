@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NEURAL HUB // AVX</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <style>
+        /* Specific Views CSS Included Here for simplicity */
+
+        /* ── Lesson View Specifics ── */
+        .lesson-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .lesson-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .lesson-progress {
+            display: flex;
+            gap: 8px;
+        }
+
+        .progress-dot {
+            width: 40px;
+            height: 4px;
+            background: var(--bg-surface-hover);
+            border-radius: 2px;
+        }
+
+        .progress-dot.active {
+            background: var(--accent);
+        }
+
+        .progress-dot.completed {
+            background: var(--success);
+        }
+
+        .lesson-section {
+            margin-bottom: 48px;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .formula-box {
+            background: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            font-family: var(--font-code);
+            font-size: 1.1rem;
+            color: var(--accent);
+            text-align: center;
+            margin: 24px 0;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ── Analytics View Specifics ── */
+        .analytics-grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .chart-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-container-inner {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Mastery Matrix Table */
+        .mastery-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            margin-top: 16px;
+        }
+
+        .mastery-table th {
+            text-align: left;
+            padding: 12px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 500;
+        }
+
+        .mastery-table td {
+            padding: 16px 12px;
+            border-bottom: 1px solid var(--border-color-hover);
+        }
+
+        .mastery-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 65% calc(35% - 32px);
+            gap: 32px;
+        }
+
+        @media (max-width: 1200px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="text-accent">//</span> NEURAL_HUB
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-item active" data-target="dashboard-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Overview
+                </div>
+                <div class="nav-item" data-target="study-path-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                    Study Path
+                </div>
+                <div class="nav-item" data-target="lesson-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    Lessons
+                </div>
+                <div class="nav-item" data-target="pyq-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    PYQ Archive
+                </div>
+                <div class="nav-item" data-target="practice-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    Practice
+                </div>
+                <div class="nav-item" data-target="analytics-view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    Analytics
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="admin.html" class="nav-item" style="margin-bottom: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    Admin Panel
+                </a>
+                <a href="login.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Wrapper -->
+        <main class="main-wrapper">
+
+            <!-- Contextual Topbar -->
+            <header class="topbar">
+                <div class="topbar-search">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Search syllabus, notes, problems...">
+                </div>
+
+                <div class="user-profile">
+                    <div class="text-muted" style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem;">
+                        System Status: <span
+                            style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--success); box-shadow: 0 0 8px var(--success);"></span>
+                        Online
+                    </div>
+                    <div class="avatar" style="margin-left: 16px;">
+                        S1
+                    </div>
+                </div>
+            </header>
+
+            <!-- Views Container (SPA rendering) -->
+            <div class="views-container">
+
+                <!-- 1. DASHBOARD VIEW -->
+                <div id="dashboard-view" class="view active">
+
+                    <div class="main-grid">
+
+                        <!-- Left Column: Launcher & Grid -->
+                        <div>
+                            <!-- Section 1: Learning Launcher Hero -->
+                            <div class="dashboard-section">
+                                <div class="section-label">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)"
+                                        stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    Continue Learning
+                                </div>
+                                <div class="learning-launcher">
+                                    <div class="launcher-info">
+                                        <div class="launcher-meta">
+                                            <span class="badge">Chemistry</span>
+                                            <span class="badge alert">Difficulty: High</span>
+                                            <span class="badge">Estimated Time: 45 min</span>
+                                        </div>
+                                        <h1 class="launcher-title">Molecular Orbitals of <br>Diatomic Molecules</h1>
+
+                                        <div class="launcher-actions">
+                                            <button class="btn btn-primary" style="padding: 12px 24px; font-size: 1rem;"
+                                                onclick="switchView('lesson-view')">Start Lesson →</button>
+                                            <button class="btn btn-secondary" onclick="switchView('pyq-view')">View
+                                                PYQs</button>
+                                            <button class="btn btn-ghost">Open Notes</button>
+                                        </div>
+
+                                        <div style="margin-top: 24px;">
+                                            <div
+                                                style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px;">
+                                                <span>Lesson Progress</span>
+                                                <span class="font-code text-accent">30%</span>
+                                            </div>
+                                            <div class="lesson-progress-indicator">
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2: Study Map -->
+                            <div class="dashboard-section">
+                                <div class="section-label">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+                                    Study Map
+                                </div>
+                                <div class="subject-grid">
+
+                                    <div class="subject-card">
+                                        <div class="subject-header">Engineering Physics</div>
+                                        <div class="subject-progress-text">
+                                            <span>Completion</span>
+                                            <span class="text-accent">65%</span>
+                                        </div>
+                                        <div class="lesson-progress-indicator"
+                                            style="margin-bottom: 24px; height: 3px; background: rgba(255,255,255,0.05);">
+                                            <div class="fill" style="width: 65%;"></div>
+                                        </div>
+                                        <div class="subject-next-topic">
+                                            <span>Next Topic:</span>
+                                            <strong>Interference in Thin Films</strong>
+                                            <button class="btn btn-secondary"
+                                                style="width: 100%; justify-content: space-between;">Continue <span
+                                                    style="color:var(--text-muted);">→</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="subject-card">
+                                        <div class="subject-header">Engineering Chemistry</div>
+                                        <div class="subject-progress-text">
+                                            <span>Completion</span>
+                                            <span class="text-accent">22%</span>
+                                        </div>
+                                        <div class="lesson-progress-indicator"
+                                            style="margin-bottom: 24px; height: 3px; background: rgba(255,255,255,0.05);">
+                                            <div class="fill" style="width: 22%;"></div>
+                                        </div>
+                                        <div class="subject-next-topic">
+                                            <span>Next Topic:</span>
+                                            <strong>Molecular Orbitals</strong>
+                                            <button class="btn btn-primary"
+                                                style="width: 100%; justify-content: space-between;"
+                                                onclick="switchView('lesson-view')">Continue <span
+                                                    style="opacity:0.6;">→</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="subject-card">
+                                        <div class="subject-header">Engineering Mathematics</div>
+                                        <div class="subject-progress-text">
+                                            <span>Completion</span>
+                                            <span class="text-accent">80%</span>
+                                        </div>
+                                        <div class="lesson-progress-indicator"
+                                            style="margin-bottom: 24px; height: 3px; background: rgba(255,255,255,0.05);">
+                                            <div class="fill" style="width: 80%;"></div>
+                                        </div>
+                                        <div class="subject-next-topic">
+                                            <span>Next Topic:</span>
+                                            <strong>Eigenvalues & Vectors</strong>
+                                            <button class="btn btn-secondary"
+                                                style="width: 100%; justify-content: space-between;">Continue <span
+                                                    style="color:var(--text-muted);">→</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="subject-card" style="opacity: 0.7;">
+                                        <div class="subject-header">Programming</div>
+                                        <div class="subject-progress-text">
+                                            <span>Completion</span>
+                                            <span class="text-accent">0%</span>
+                                        </div>
+                                        <div class="lesson-progress-indicator"
+                                            style="margin-bottom: 24px; height: 3px; background: rgba(255,255,255,0.05);">
+                                            <div class="fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="subject-next-topic">
+                                            <span>Next Topic:</span>
+                                            <strong>Introduction to C</strong>
+                                            <button class="btn btn-secondary"
+                                                style="width: 100%; justify-content: space-between;">Start <span
+                                                    style="color:var(--text-muted);">→</span></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Queue & Practice -->
+                        <div>
+
+                            <!-- Section 3: Recommended Study Queue -->
+                            <div class="dashboard-section">
+                                <div class="section-label">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                    </svg>
+                                    Recommended Queue
+                                </div>
+                                <div class="queue-list">
+
+                                    <div class="queue-item">
+                                        <div class="queue-info">
+                                            <div class="title">Eigenvalues & Vectors</div>
+                                            <div class="reason practice"><svg width="12" height="12" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M2 12h4l3-9 5 18 3-9h5" />
+                                                </svg> Reason: Needs Practice</div>
+                                        </div>
+                                        <button class="btn btn-secondary"
+                                            style="padding: 6px 12px; font-size:0.85rem;">Start →</button>
+                                    </div>
+
+                                    <div class="queue-item">
+                                        <div class="queue-info">
+                                            <div class="title">Interference in Thin Films</div>
+                                            <div class="reason"><svg width="12" height="12" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                                </svg> Reason: Weak Area</div>
+                                        </div>
+                                        <button class="btn btn-secondary"
+                                            style="padding: 6px 12px; font-size:0.85rem;">Start →</button>
+                                    </div>
+
+                                    <div class="queue-item">
+                                        <div class="queue-info">
+                                            <div class="title">He-Ne Laser System</div>
+                                            <div class="reason" style="color:var(--text-muted);"><svg width="12"
+                                                    height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                                </svg> Reason: Upcoming Exam</div>
+                                        </div>
+                                        <button class="btn btn-secondary"
+                                            style="padding: 6px 12px; font-size:0.85rem;">Start →</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Section 4: Practice Mode -->
+                            <div class="dashboard-section">
+                                <div class="section-label">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z">
+                                        </path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="12" y2="17"></line>
+                                    </svg>
+                                    Quick Practice
+                                </div>
+
+                                <div class="practice-grid">
+                                    <div class="practice-card">
+                                        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                        </svg>
+                                        <div class="title">Practice Physics</div>
+                                        <div class="desc">30 node questions</div>
+                                    </div>
+                                    <div class="practice-card">
+                                        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
+                                        <div class="title">Practice Chemistry</div>
+                                        <div class="desc">14 node questions</div>
+                                    </div>
+                                    <div class="practice-card">
+                                        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                        <div class="title">Practice Mathematics</div>
+                                        <div class="desc">52 node questions</div>
+                                    </div>
+
+                                    <!-- Special Actions -->
+                                    <button class="btn btn-secondary"
+                                        style="grid-column: 1 / -1; padding: 12px; margin-top: 8px;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="var(--accent)" stroke-width="2">
+                                            <polyline points="16 3 21 3 21 8"></polyline>
+                                            <line x1="4" y1="20" x2="21" y2="3"></line>
+                                            <polyline points="21 16 21 21 16 21"></polyline>
+                                            <line x1="15" y1="15" x2="21" y2="21"></line>
+                                            <line x1="4" y1="4" x2="9" y2="9"></line>
+                                        </svg>
+                                        Random PYQ Generator
+                                    </button>
+                                    <button class="btn btn-secondary" style="grid-column: 1 / -1; padding: 12px;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>
+                                        Timed Quiz Mode
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Section 5: Analytics (Secondary) -->
+                    <div class="analytics-section" id="analytics-preview">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px;">
+                            <div class="section-label" style="margin:0;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                                    <line x1="9" y1="3" x2="9" y2="18"></line>
+                                    <line x1="15" y1="6" x2="15" y2="21"></line>
+                                </svg>
+                                Secondary Insights
+                            </div>
+                            <button class="btn btn-ghost" style="font-size: 0.85rem;"
+                                onclick="switchView('analytics-view')">View Detailed Analytics →</button>
+                        </div>
+
+                        <div class="analytics-secondary-grid">
+                            <div class="card chart-card">
+                                <h3 style="font-size: 1rem; margin-bottom: 16px; color:var(--text-muted);">Subject
+                                    Mastery Vector</h3>
+                                <div class="chart-container-inner" id="radar-chart-container">
+                                    <canvas id="radarCanvas" width="200" height="200"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="card chart-card">
+                                <h3 style="font-size: 1rem; margin-bottom: 16px; color:var(--text-muted);">Session Time
+                                    (Weekly)</h3>
+                                <div class="chart-container-inner" id="bar-chart-container">
+                                    <canvas id="barCanvas" width="300" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Topic Matrix preview -->
+                        <div class="card" style="margin-top: 24px; opacity: 0.8; transition: opacity 0.3s;"
+                            onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.8'">
+                            <h3 style="font-size: 1rem; margin-bottom: 16px; color:var(--text-muted);">Topic Mastery
+                                Matrix</h3>
+                            <div style="overflow-x: auto;">
+                                <table class="mastery-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Topic Node</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Physics</td>
+                                            <td>Interference in Thin Films</td>
+                                            <td><span class="badge alert">Needs Review</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chemistry</td>
+                                            <td>Molecular Orbitals</td>
+                                            <td><span class="badge accent">In Progress</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2. LESSON INTERFACE VIEW -->
+                <div id="lesson-view" class="view">
+
+                    <div class="lesson-container">
+
+                        <div class="lesson-header">
+                            <div>
+                                <span class="badge accent" style="margin-bottom: 8px;">KAS-101T</span>
+                                <h2>Molecular Orbitals of Diatomic Molecules</h2>
+                            </div>
+                            <!-- Minimalist IDE styled breadcrumb/progress -->
+                            <div class="lesson-progress">
+                                <div class="progress-dot completed"></div>
+                                <div class="progress-dot active"></div>
+                                <div class="progress-dot"></div>
+                                <div class="progress-dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="lesson-section active-step">
+                            <h3
+                                style="color: var(--accent); margin-bottom: 24px; font-family: var(--font-code); font-size: 0.95rem;">
+                                > 01_concept_exploration</h3>
+
+                            <p
+                                style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 24px;">
+                                Molecular orbital (MO) theory describes the electronic structure of molecules using
+                                quantum mechanics. Electrons are not assigned to individual bonds between atoms, but are
+                                treated as moving under the influence of the nuclei in the whole molecule.
+                            </p>
+
+                            <!-- VoyLearning Style Concept Workspace Cards -->
+                            <div class="concept-grid">
+
+                                <div class="concept-card tilt-element">
+                                    <div class="concept-card-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="concept-card-title">Interactive Notes</div>
+                                    <div class="concept-card-desc">Review detailed structured notes on Diatomic
+                                        Molecules with 3D visualizations.</div>
+                                    <div class="concept-card-footer">
+                                        <span>Open Workspace</span>
+                                        <span>→</span>
+                                    </div>
+                                </div>
+
+                                <div class="concept-card tilt-element">
+                                    <div class="concept-card-icon" style="color: var(--success);">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="concept-card-title">Concept Formulas</div>
+                                    <div class="concept-card-desc"
+                                        style="font-family: var(--font-code); margin-top: 8px;">
+                                        Ψ_MO = c₁Ψ₁ ± c₂Ψ₂
+                                    </div>
+                                    <div class="concept-card-footer">
+                                        <span>View Derivations</span>
+                                        <span>→</span>
+                                    </div>
+                                </div>
+
+                                <div class="concept-card tilt-element">
+                                    <div class="concept-card-icon" style="color: var(--alert);">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="concept-card-title">Micro-Quiz</div>
+                                    <div class="concept-card-desc">Test your understanding of constructive and
+                                        destructive interference in orbitals.</div>
+                                    <div class="concept-card-footer">
+                                        <span>Start Quiz (3 min)</span>
+                                        <span>→</span>
+                                    </div>
+                                </div>
+
+                                <div class="concept-card tilt-element">
+                                    <div class="concept-card-icon" style="color: #a371f7;">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                            </path>
+                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="concept-card-title">3D Simulator</div>
+                                    <div class="concept-card-desc">Launch the 3D WebGL simulator to visualize electron
+                                        density probability.</div>
+                                    <div class="concept-card-footer">
+                                        <span>Launch Sandbox</span>
+                                        <span>→</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            style="display: flex; justify-content: space-between; margin-top: 64px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+                            <button class="btn btn-ghost" onclick="switchView('dashboard-view')">← Return Home</button>
+                            <button class="btn btn-primary" onclick="alert('Module Completed')">Complete Module &
+                                Continue →</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 3. PYQ ARCHIVE VIEW -->
+                <div id="pyq-view" class="view">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px;">
+                        <div>
+                            <h2>PYQ Intelligence Archive</h2>
+                            <p class="text-muted">Filtered database of Previous Year Questions.</p>
+                        </div>
+                        <!-- Filters -->
+                        <div style="display: flex; gap: 16px;">
+                            <select style="width: auto; min-width: 150px;">
+                                <option>Subject: All</option>
+                                <option>Physics</option>
+                                <option>Chemistry</option>
+                            </select>
+                            <select style="width: auto; min-width: 150px;">
+                                <option>Difficulty: Any</option>
+                                <option>Level 1-2 (Easy)</option>
+                                <option>Level 3 (Medium)</option>
+                                <option>Level 4+ (Hard)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; gap: 16px;">
+
+                        <div class="card" style="padding: 24px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                                <div class="badge">AKTU 2022-23</div>
+                                <div class="badge alert">Hard</div>
+                            </div>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 24px; font-weight: 500; color: #fff;">
+                                Draw the molecular orbital diagram of NO molecule and calculate its bond order. Explain
+                                its magnetic behavior.
+                            </h3>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 16px;">
+                                <span class="text-muted" style="font-size: 0.85rem;">Tag: Molecular Orbitals</span>
+                                <div style="display: flex; gap: 12px;">
+                                    <button class="btn btn-ghost">Reveal Solution</button>
+                                    <button class="btn btn-secondary">Solve Environment Setup →</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 4. ANALYTICS VIEW -->
+                <div id="analytics-view" class="view">
+
+                    <h2>Detailed Mastery Analytics</h2>
+                    <p class="text-muted" style="margin-bottom: 32px;">System telemetry and cognitive performance
+                        tracking.</p>
+
+                    <!-- Large Topic Matrix -->
+                    <div class="card">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 16px;">Topic Mastery Matrix</h3>
+                        <div style="overflow-x: auto;">
+                            <table class="mastery-table">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Topic Node</th>
+                                        <th>Status</th>
+                                        <th>Confidence Index</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Physics</td>
+                                        <td>Interference in Thin Films</td>
+                                        <td><span class="badge alert">Needs Review</span></td>
+                                        <td style="font-family: var(--font-code);">0.35</td>
+                                        <td><button class="btn btn-ghost"
+                                                style="padding: 4px 8px;">Re-initialize</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chemistry</td>
+                                        <td>Molecular Orbitals</td>
+                                        <td><span class="badge accent">In Progress</span></td>
+                                        <td style="font-family: var(--font-code);">0.60</td>
+                                        <td><button class="btn btn-ghost" style="padding: 4px 8px;">Resume</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Math</td>
+                                        <td>Matrix Rank</td>
+                                        <td><span class="badge"
+                                                style="color: var(--success); border-color: var(--success);">Mastered</span>
+                                        </td>
+                                        <td style="font-family: var(--font-code);">0.95</td>
+                                        <td><button class="btn btn-ghost" style="padding: 4px 8px;">Practice</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 5. PLACEHOLDER VIEWS -->
+                <div id="study-path-view" class="view">
+                    <h2>Study Path</h2>
+                    <p class="text-muted">Hierarchical curriculum view.</p>
+                </div>
+                <div id="practice-view" class="view">
+                    <h2>Practice Arena</h2>
+                    <p class="text-muted">Execution environment for problem solving.</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Simple SPA Routing Logic
+        const navItems = document.querySelectorAll('.nav-item[data-target]');
+        const views = document.querySelectorAll('.view');
+
+        function switchView(targetId) {
+            // Update active nav
+            navItems.forEach(item => {
+                if (item.dataset.target === targetId) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Update active view
+            views.forEach(view => {
+                if (view.id === targetId) {
+                    view.classList.add('active');
+                    // Re-trigger animations by cloning and replacing
+                    const newView = view.cloneNode(true);
+                    view.parentNode.replaceChild(newView, view);
+                } else {
+                    view.classList.remove('active');
+                }
+            });
+
+            // Draw charts everywhere on load to ensure they show up in preview
+            drawRadarChart();
+            drawBarChart();
+        }
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                switchView(item.dataset.target);
+            });
+        });
+
+        // HTML5 Canvas functionality for Analytics
+        function drawRadarChart() {
+            const canvas = document.getElementById('radarCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = canvas.width / 2 - 30; // dynamic radius based on size
+            const sides = 5;
+            const labels = ['Math', 'Physics', 'Chem', 'Prog', 'Elec'];
+            const data = [0.8, 0.65, 0.22, 0.5, 0.9]; // 0.0 to 1.0
+
+            // Draw Web
+            ctx.strokeStyle = '#30363D';
+            ctx.lineWidth = 1;
+            for (let level = 1; level <= 4; level++) {
+                let r = radius * (level / 4);
+                ctx.beginPath();
+                for (let i = 0; i < sides; i++) {
+                    const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+                    const x = centerX + r * Math.cos(angle);
+                    const y = centerY + r * Math.sin(angle);
+                    if (i === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.stroke();
+            }
+
+            // Draw Axes
+            for (let i = 0; i < sides; i++) {
+                const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(centerX + radius * Math.cos(angle), centerY + radius * Math.sin(angle));
+                ctx.stroke();
+
+                // Draw Label
+                ctx.fillStyle = '#8B949E';
+                ctx.font = '11px Inter';
+                ctx.textAlign = 'center';
+                const lx = centerX + (radius + 20) * Math.cos(angle);
+                const ly = centerY + (radius + 15) * Math.sin(angle);
+                ctx.fillText(labels[i], lx, ly + 4);
+            }
+
+            // Draw Data Polygon
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(88, 166, 255, 0.3)';
+            ctx.strokeStyle = '#58A6FF';
+            ctx.lineWidth = 2;
+            for (let i = 0; i < sides; i++) {
+                const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+                const r = radius * data[i];
+                const x = centerX + r * Math.cos(angle);
+                const y = centerY + r * Math.sin(angle);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            // Draw Data Points
+            for (let i = 0; i < sides; i++) {
+                const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+                const r = radius * data[i];
+                const x = centerX + r * Math.cos(angle);
+                const y = centerY + r * Math.sin(angle);
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fillStyle = '#fff';
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+
+        function drawBarChart() {
+            const canvas = document.getElementById('barCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const labels = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+            const data = [2, 3.5, 1, 4, 2.5, 0, 1.5]; // hours
+
+            const w = canvas.width;
+            const h = canvas.height;
+            const padX = 20;
+            const padY = 20;
+            const maxVal = 5;
+            const barW = 16;
+            const gap = (w - padX * 2 - barW * 7) / 6;
+
+            // Draw Y axis lines
+            ctx.strokeStyle = '#30363D';
+            ctx.fillStyle = '#8B949E';
+            ctx.font = '10px JetBrains Mono';
+            ctx.textAlign = 'right';
+
+            for (let i = 0; i <= 5; i += 1) {
+                const y = h - padY - ((h - padY * 2) * (i / maxVal));
+                ctx.beginPath();
+                ctx.moveTo(padX + 10, y);
+                ctx.lineTo(w - 10, y);
+                ctx.stroke();
+
+                ctx.fillText(i + 'h', padX + 5, y + 3);
+            }
+
+            // Draw Bars
+            for (let i = 0; i < labels.length; i++) {
+                const x = padX + 20 + i * (barW + gap);
+                const barH = (data[i] / maxVal) * (h - padY * 2);
+                const y = h - padY - barH;
+
+                // Gradient
+                const grad = ctx.createLinearGradient(0, y, 0, h - padY);
+                grad.addColorStop(0, '#58A6FF');
+                grad.addColorStop(1, 'rgba(88, 166, 255, 0.1)');
+
+                ctx.fillStyle = grad;
+                // Rounded top radius hack
+                ctx.beginPath();
+                ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]);
+                ctx.fill();
+
+                // Labels
+                ctx.fillStyle = '#E6EDF3';
+                ctx.textAlign = 'center';
+                ctx.font = '11px Inter';
+                ctx.fillText(labels[i], x + barW / 2, h - padY + 14);
+            }
+        }
+
+        // Initial draw
+        document.addEventListener('DOMContentLoaded', () => {
+            drawRadarChart();
+            drawBarChart();
+        });
+
+    </script>
+</body>
+
+</html>

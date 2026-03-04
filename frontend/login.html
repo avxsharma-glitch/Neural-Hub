@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NEURAL HUB // AVX</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #151921 0%, #0B0E14 100%);
+        }
+
+        #auth-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            z-index: 10;
+            opacity: 0;
+            /* Animated in via JS */
+            transform: translateY(20px);
+            animation: floatIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes floatIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .login-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .login-subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .role-switch {
+            display: flex;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--radius-md);
+            padding: 4px;
+            margin-bottom: 24px;
+        }
+
+        .role-btn {
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            transition: var(--transition-fast);
+        }
+
+        .role-btn.active {
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .form-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="auth-bg"></div>
+
+    <div class="card glass-panel login-card">
+        <div class="login-header">
+            <div class="login-logo">NEURAL HUB <span class="text-accent">//</span> AVX</div>
+            <div class="login-subtitle">Authenticate to access your workspace.</div>
+        </div>
+
+        <div class="role-switch">
+            <div class="role-btn active" id="btn-student">Student</div>
+            <div class="role-btn" id="btn-admin">System Admin</div>
+        </div>
+
+        <form class="auth-form" id="login-form">
+            <div>
+                <label>Institutional Email</label>
+                <input type="email" placeholder="student@aktu.ac.in" required>
+            </div>
+            <div>
+                <label>Access Token (Password)</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="btn-login-submit">Initialize Session</button>
+        </form>
+
+        <div class="form-footer">
+            <span class="text-muted">Unregistered origin?</span> <a href="#">Request clearance</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // auth-3d background script inline for simplicity/speed
+        const initAuthBg = () => {
+            const container = document.getElementById('auth-bg');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 100;
+            camera.position.y = 20;
+            camera.lookAt(0, 0, 0);
+
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+
+            // Wireframe Grid representing a structural floor
+            const gridHelper = new THREE.GridHelper(400, 40, 0x58A6FF, 0x30363D);
+            gridHelper.position.y = -30;
+            scene.add(gridHelper);
+
+            // Subtle rotating mathematical shapes
+            const shapes = [];
+            const geo1 = new THREE.OctahedronGeometry(8, 0);
+            const geo2 = new THREE.TorusGeometry(6, 1.5, 8, 20);
+            const mat = new THREE.MeshBasicMaterial({ color: 0x8B949E, wireframe: true, transparent: true, opacity: 0.15 });
+
+            for (let i = 0; i < 3; i++) {
+                const mesh = new THREE.Mesh(i % 2 === 0 ? geo1 : geo2, mat);
+                mesh.position.set(
+                    (Math.random() - 0.5) * 100,
+                    (Math.random() - 0.5) * 40,
+                    (Math.random() - 0.5) * 50 - 20
+                );
+                scene.add(mesh);
+                shapes.push(mesh);
+            }
+
+            const animate = () => {
+                requestAnimationFrame(animate);
+                gridHelper.position.z = (gridHelper.position.z + 0.1) % 10; // Scroll grid forward
+
+                shapes.forEach(shape => {
+                    shape.rotation.x += 0.005;
+                    shape.rotation.y += 0.01;
+                });
+
+                renderer.render(scene, camera);
+            };
+            animate();
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        };
+        document.addEventListener('DOMContentLoaded', initAuthBg);
+
+        // Role Switch Logic
+        const btnStudent = document.getElementById('btn-student');
+        const btnAdmin = document.getElementById('btn-admin');
+        const btnSubmit = document.getElementById('btn-login-submit');
+        const loginForm = document.getElementById('login-form');
+        let isAdmin = false;
+
+        btnStudent.addEventListener('click', () => {
+            btnStudent.classList.add('active');
+            btnAdmin.classList.remove('active');
+            btnSubmit.innerHTML = 'Initialize Session';
+            btnSubmit.className = 'btn btn-primary btn-submit';
+            isAdmin = false;
+        });
+
+        btnAdmin.addEventListener('click', () => {
+            btnAdmin.classList.add('active');
+            btnStudent.classList.remove('active');
+            btnSubmit.innerHTML = 'Override Authorization';
+            btnSubmit.className = 'btn btn-primary btn-submit';
+            btnSubmit.style.backgroundColor = 'var(--alert)';
+            btnSubmit.style.boxShadow = '0 0 10px rgba(177, 18, 18, 0.2)';
+            isAdmin = true;
+        });
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            btnSubmit.innerHTML = 'Authenticating...';
+            setTimeout(() => {
+                if (isAdmin) {
+                    window.location.href = 'admin.html';
+                } else {
+                    window.location.href = 'dashboard.html';
+                }
+            }, 800);
+        });
+
+    </script>
+</body>
+
+</html>
