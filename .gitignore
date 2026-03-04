@@ -9,9 +9,15 @@ yarn-error.log*
 .env.*
 !.env.example
 
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
 # Logs
 logs/
 *.log
+error.log
 
 # OS
 .DS_Store
@@ -24,3 +30,11 @@ Thumbs.db
 # Build artifacts
 dist/
 build/
+.next/
+
+# Prisma generated client (regenerated on install)
+# node_modules is already ignored
+
+# Scratch / diagnostic scripts
+backend/check-adapter.js
+backend/test.js

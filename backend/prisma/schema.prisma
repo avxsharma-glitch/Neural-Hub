@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Subject {
+  id       String @id @default(uuid())
+  name     String
+  code     String @unique
+  category String
+  semester Int
+  units    Unit[]
+}
+
+model Unit {
+  id        String  @id @default(uuid())
+  subjectId String
+  name      String
+  number    Int
+  subject   Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  topics    Topic[]
+}
+
+model Topic {
+  id             String            @id @default(uuid())
+  unitId         String
+  name           String
+  difficulty     Int               // 1 to 5
+  importance     Float             // 0.0 to 1.0
+  unit           Unit              @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  conceptTags    ConceptTag[]
+  pyqs           PYQ[]
+  studyProgress  StudyProgress[]
+  
+  // Graph Relationships
+  outboundLinks  ConceptRelation[] @relation("SourceTopic")
+  inboundLinks   ConceptRelation[] @relation("TargetTopic")
+}
+
+model ConceptTag {
+  id      String @id @default(uuid())
+  topicId String
+  name    String
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+}
+
+model PYQ {
+  id           String @id @default(uuid())
+  topicId      String
+  year         Int
+  questionText String
+  difficulty   Int    // 1 to 5
+  topic        Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String          @id @default(uuid())
+  name          String
+  email         String          @unique
+  passwordHash  String
+  studyProgress StudyProgress[]
+}
+
+model StudyProgress {
+  id                   String   @id @default(uuid())
+  userId               String
+  topicId              String
+  completionPercentage Float    // 0.0 to 100.0
+  lastAccessed         DateTime @default(now())
+  
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic                Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, topicId])
+}
+
+model ConceptRelation {
+  id               String @id @default(uuid())
+  sourceTopicId    String
+  targetTopicId    String
+  relationshipType String // e.g., "prerequisite", "related"
+
+  sourceTopic      Topic  @relation("SourceTopic", fields: [sourceTopicId], references: [id], onDelete: Cascade)
+  targetTopic      Topic  @relation("TargetTopic", fields: [targetTopicId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceTopicId, targetTopicId])
+}

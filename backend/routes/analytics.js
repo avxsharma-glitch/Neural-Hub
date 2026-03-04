@@ -1,20 +1,69 @@
 const express = require('express');
 const router = express.Router();
-const analyticsController = require('../controllers/analyticsController');
-const auth = require('../middleware/auth');
+const prisma = require('../config/prisma');
 
-// ── Existing Routes ──────────────────────────────────────────────────────────
-router.get('/overview', auth, analyticsController.getOverview);
-router.get('/radar', auth, analyticsController.getRadar);
-router.get('/stability', auth, analyticsController.getStability);
-router.get('/mastery-grid', auth, analyticsController.getMasteryGrid);
-router.get('/recent-activity', auth, analyticsController.getRecentActivity);
-router.get('/resume-learning', auth, analyticsController.getResumeLearning);
-router.get('/last-topic', auth, analyticsController.getLastTopic);
+// GET /api/analytics/user/:id — Return aggregated learning telemetry for a user
+router.get('/user/:id', async (req, res) => {
+    try {
+        const userId = req.params.id;
 
-// ── New Intelligence Routes ──────────────────────────────────────────────────
-router.get('/overview/:subjectId', auth, analyticsController.getSubjectOverview);
-router.get('/recommendation/:subjectId', auth, analyticsController.getRecommendation);
-router.get('/weak-clusters/:subjectId', auth, analyticsController.getWeakClusters);
+        const progress = await prisma.studyProgress.findMany({
+            where: { userId },
+            include: { topic: { include: { unit: { include: { subject: true } } } } },
+            orderBy: { lastAccessed: 'desc' },
+        });
+
+        const totalTopics = await prisma.topic.count();
+        const attemptedTopics = progress.length;
+        const masteredTopics = progress.filter(p => p.completionPercentage >= 80).length;
+        const avgCompletion = progress.length
+            ? progress.reduce((sum, p) => sum + p.completionPercentage, 0) / progress.length
+            : 0;
+
+        // Group progress by subject
+        const subjectBreakdown = {};
+        for (const p of progress) {
+            const subjectName = p.topic.unit.subject.name;
+            if (!subjectBreakdown[subjectName]) {
+                subjectBreakdown[subjectName] = { attempted: 0, mastered: 0, avgCompletion: 0, total: 0 };
+            }
+            subjectBreakdown[subjectName].attempted++;
+            subjectBreakdown[subjectName].total += p.completionPercentage;
+            if (p.completionPercentage >= 80) subjectBreakdown[subjectName].mastered++;
+        }
+        for (const key of Object.keys(subjectBreakdown)) {
+            subjectBreakdown[key].avgCompletion = subjectBreakdown[key].total / subjectBreakdown[key].attempted;
+        }
+
+        res.json({
+            success: true,
+            data: {
+                userId,
+                overview: { totalTopics, attemptedTopics, masteredTopics, avgCompletion: parseFloat(avgCompletion.toFixed(1)) },
+                subjectBreakdown,
+                recentActivity: progress.slice(0, 10),
+            },
+        });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
+// POST /api/analytics/progress — Upsert study progress for a topic
+router.post('/progress', async (req, res) => {
+    try {
+        const { userId, topicId, completionPercentage } = req.body;
+        if (!userId || !topicId) return res.status(400).json({ success: false, error: 'userId and topicId are required' });
+
+        const progress = await prisma.studyProgress.upsert({
+            where: { userId_topicId: { userId, topicId } },
+            update: { completionPercentage: parseFloat(completionPercentage) || 0, lastAccessed: new Date() },
+            create: { userId, topicId, completionPercentage: parseFloat(completionPercentage) || 0 },
+        });
+        res.json({ success: true, data: progress });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
 
 module.exports = router;
