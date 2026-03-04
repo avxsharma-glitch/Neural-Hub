@@ -1,119 +1,107 @@
+const fs = require('fs');
 const path = require('path');
 const { PrismaClient } = require('@prisma/client');
 const { PrismaBetterSqlite3 } = require('@prisma/adapter-better-sqlite3');
 
-// PrismaBetterSqlite3 is a factory that takes { url: 'file:...' }
-// dev.db is at backend/dev.db (created by prisma migrate from the backend root)
+// SQLite adapter (db lives at backend/dev.db)
 const dbFile = path.join(__dirname, '..', 'dev.db');
 const adapter = new PrismaBetterSqlite3({ url: `file:${dbFile}` });
 const prisma = new PrismaClient({ adapter });
 
+const DATA_FILE = path.join(__dirname, '..', '..', 'data', 'maths1.json');
+
+// Map textual difficulty to numeric bucket (1–5)
+function normalizeDifficulty(value) {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+        return Math.min(5, Math.max(1, Math.round(value)));
+    }
+    const label = String(value || '').toLowerCase();
+    if (label.includes('easy')) return 2;
+    if (label.includes('hard')) return 4;
+    if (label.includes('med')) return 3;
+    return 3; // default medium
+}
+
+function safeYear(value) {
+    const year = Number.parseInt(value, 10);
+    return Number.isFinite(year) ? year : null;
+}
+
 async function main() {
-    console.log('Seeding the Database...');
+    console.log('Seeding from JSON:', DATA_FILE);
 
-    // 1. Create Subjects
-    const subjectsToCreate = [
-        { name: 'Engineering Physics', code: 'BAS101', category: 'Basic Science', semester: 1 },
-        { name: 'Engineering Chemistry', code: 'BAS102', category: 'Basic Science', semester: 1 },
-        { name: 'Engineering Mathematics I', code: 'BAS103', category: 'Basic Science', semester: 1 },
-        { name: 'Engineering Mathematics II', code: 'BAS203', category: 'Basic Science', semester: 2 },
-        { name: 'Fundamentals of Electrical Engineering', code: 'BEE101', category: 'Engineering Science', semester: 1 },
-        { name: 'Fundamentals of Electronics Engineering', code: 'BEC101', category: 'Engineering Science', semester: 1 },
-        { name: 'Programming for Problem Solving', code: 'BCS101', category: 'Engineering Science', semester: 1 },
-        { name: 'Fundamentals of Mechanical Engineering', code: 'BME101', category: 'Engineering Science', semester: 1 },
-        { name: 'Environment and Ecology', code: 'BAS104', category: 'Basic Science', semester: 1 },
-        { name: 'Soft Skills', code: 'BAS105', category: 'Humanities', semester: 1 },
-    ];
+    const raw = fs.readFileSync(DATA_FILE, 'utf8');
+    const data = JSON.parse(raw);
 
-    const subjects = {};
-    for (const sub of subjectsToCreate) {
-        subjects[sub.code] = await prisma.subject.upsert({
-            where: { code: sub.code },
-            update: {},
-            create: sub
+    const subjectName = data.subject || 'Imported Subject';
+    const subjectCode = (subjectName || 'SUBJECT').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 12) || 'SUBJECT';
+
+    const subject = await prisma.subject.upsert({
+        where: { code: subjectCode },
+        update: { name: subjectName },
+        create: {
+            name: subjectName,
+            code: subjectCode,
+            category: 'Imported',
+            semester: 1,
+        },
+    });
+
+    let unitCount = 0;
+    let topicCount = 0;
+    let tagCount = 0;
+    let pyqCount = 0;
+
+    for (const [uIndex, unit] of (data.units || []).entries()) {
+        const createdUnit = await prisma.unit.create({
+            data: {
+                subjectId: subject.id,
+                name: unit.unit_name || `Unit ${uIndex + 1}`,
+                number: uIndex + 1,
+            },
         });
+        unitCount += 1;
+
+        for (const topic of unit.topics || []) {
+            const normalizedDifficulty = normalizeDifficulty(topic.difficulty);
+            const importance = 0.6; // default importance weight
+
+            const conceptTags = (topic.concept_tags || topic.conceptTags || []).filter(Boolean).map((name) => ({ name }));
+            const pyqs = (topic.pyqs || []).map((q) => {
+                const year = safeYear(q.year);
+                return year
+                    ? {
+                            year,
+                            questionText: q.question || q.questionText || 'PYQ not provided',
+                            difficulty: normalizeDifficulty(q.difficulty || topic.difficulty),
+                        }
+                    : null;
+            }).filter(Boolean);
+
+            const createdTopic = await prisma.topic.create({
+                data: {
+                    unitId: createdUnit.id,
+                    name: topic.topic_name || 'Untitled Topic',
+                    difficulty: normalizedDifficulty,
+                    importance,
+                    conceptTags: conceptTags.length ? { create: conceptTags } : undefined,
+                    pyqs: pyqs.length ? { create: pyqs } : undefined,
+                },
+            });
+
+            topicCount += 1;
+            tagCount += conceptTags.length;
+            pyqCount += pyqs.length;
+        }
     }
 
-    // 2. Create Units for 'Engineering Mathematics I' and 'Engineering Physics'
-    const mathUnit1 = await prisma.unit.create({
-        data: { subjectId: subjects['BAS103'].id, name: 'Matrices', number: 1 }
-    });
-
-    const mathUnit2 = await prisma.unit.create({
-        data: { subjectId: subjects['BAS103'].id, name: 'Differential Calculus I', number: 2 }
-    });
-
-    const physUnit1 = await prisma.unit.create({
-        data: { subjectId: subjects['BAS101'].id, name: 'Relativistic Mechanics', number: 1 }
-    });
-
-    // 3. Create Topics & Concept Tags
-    const topicMath1 = await prisma.topic.create({
-        data: {
-            unitId: mathUnit1.id, name: 'Types of Matrices and Properties', difficulty: 2, importance: 0.8,
-            conceptTags: { create: [{ name: 'Symmetric' }, { name: 'Orthogonal' }] }
-        }
-    });
-
-    const topicMath2 = await prisma.topic.create({
-        data: {
-            unitId: mathUnit1.id, name: 'Eigenvalues and Eigenvectors', difficulty: 4, importance: 0.95,
-            conceptTags: { create: [{ name: 'Characteristic Equation' }] }
-        }
-    });
-
-    const topicMath3 = await prisma.topic.create({
-        data: {
-            unitId: mathUnit1.id, name: 'Cayley-Hamilton Theorem', difficulty: 3, importance: 0.85,
-            conceptTags: { create: [{ name: 'Inverse Matrix' }] }
-        }
-    });
-
-    const topicMath4 = await prisma.topic.create({
-        data: {
-            unitId: mathUnit2.id, name: 'Partial Differentiation', difficulty: 3, importance: 0.8,
-            conceptTags: { create: [{ name: 'Euler\'s Theorem' }] }
-        }
-    });
-
-    const topicPhys1 = await prisma.topic.create({
-        data: {
-            unitId: physUnit1.id, name: 'Lorentz Transformation', difficulty: 5, importance: 0.9,
-            conceptTags: { create: [{ name: 'Time Dilation' }, { name: 'Length Contraction' }] }
-        }
-    });
-
-    // 4. Create Inter-topic Concept Relations (The Knowledge Graph)
-    // Matrices -> Cayley-Hamilton
-    await prisma.conceptRelation.create({
-        data: { sourceTopicId: topicMath1.id, targetTopicId: topicMath3.id, relationshipType: 'prerequisite' }
-    });
-
-    // Matrices -> Eigenvalues
-    await prisma.conceptRelation.create({
-        data: { sourceTopicId: topicMath1.id, targetTopicId: topicMath2.id, relationshipType: 'prerequisite' }
-    });
-
-    // Eigenvalues -> Cayley Hamilton
-    await prisma.conceptRelation.create({
-        data: { sourceTopicId: topicMath2.id, targetTopicId: topicMath3.id, relationshipType: 'related' }
-    });
-
-    // 5. Create PYQs
-    await prisma.pYQ.create({
-        data: { topicId: topicMath2.id, year: 2022, questionText: 'Find the eigenvalues and eigenvectors of the matrix [3 -1; -1 3].', difficulty: 3 }
-    });
-
-    await prisma.pYQ.create({
-        data: { topicId: topicMath3.id, year: 2021, questionText: 'Verify Cayley-Hamilton theorem for matrix A and hence find A^-1.', difficulty: 4 }
-    });
-
-    console.log('Database Seeding Completed Successfully! 🌱');
+    console.log(`Seeded Subject: ${subject.name}`);
+    console.log(`Units: ${unitCount}, Topics: ${topicCount}, Concept Tags: ${tagCount}, PYQs: ${pyqCount}`);
 }
 
 main()
-    .catch((e) => {
-        console.error(e);
+    .catch((err) => {
+        console.error('Seed failed:', err);
         process.exit(1);
     })
     .finally(async () => {

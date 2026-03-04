@@ -1,0 +1,110 @@
+{
+  "Subject": "Engineering Physics",
+  "Units": [
+    {
+      "Unit": "Unit I: Relativistic Mechanics",
+      "Topics": [
+        {
+          "Topic": "Frame of Reference and MM Experiment",
+          "Concept_Tags": ["Inertial frame", "Non-inertial frame", "Michelson-Morley", "Lorentz transformation"],
+          "PYQs": [
+            { "question": "Derive Lorentz transformation equations.", "year": 2021 },
+            { "question": "Explain the negative result of the Michelson-Morley experiment.", "year": 2020 }
+          ]
+        },
+        {
+          "Topic": "Time Dilation and Length Contraction",
+          "Concept_Tags": ["Time dilation", "Length contraction", "Relativistic factor"],
+          "PYQs": [
+            { "question": "Deduce the relation E^2 - p^2c^2 = m0^2c^4.", "year": 2023 },
+            { "question": "Calculate the velocity at which the mass of a particle becomes double its rest mass.", "year": 2022 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Electromagnetic Field Theory",
+      "Topics": [
+        {
+          "Topic": "Maxwell's Equations",
+          "Concept_Tags": ["Displacement current", "Poynting vector", "Gauss law", "Faraday law"],
+          "PYQs": [
+            { "question": "Derive the wave equation for free space using Maxwell's equations.", "year": 2020 },
+            { "question": "Write Maxwell's equations in differential form and explain their physical significance.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "EM Waves and Skin Depth",
+          "Concept_Tags": ["Wave equation", "Skin depth", "Attenuation"],
+          "PYQs": [
+            { "question": "Show that EM waves are transverse in nature.", "year": 2019 },
+            { "question": "Calculate the skin depth for a conductor at 1 MHz.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Quantum Mechanics",
+      "Topics": [
+        {
+          "Topic": "Wave-Particle Duality",
+          "Concept_Tags": ["De Broglie", "Davisson-Germer", "Phase velocity", "Group velocity"],
+          "PYQs": [
+            { "question": "Derive the relation between Phase velocity and Group velocity.", "year": 2022 },
+            { "question": "Show that the group velocity of a matter wave equals the particle velocity.", "year": 2020 }
+          ]
+        },
+        {
+          "Topic": "Schrodinger Equation and Particle in a Box",
+          "Concept_Tags": ["Time-independent", "Eigenvalues", "Quantization"],
+          "PYQs": [
+            { "question": "What is the physical significance of the wave function?", "year": 2021 },
+            { "question": "Solve Schrodinger's equation for a particle in a 1D infinite potential well.", "year": 2023 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Wave Optics",
+      "Topics": [
+        {
+          "Topic": "Interference and Newton's Rings",
+          "Concept_Tags": ["Coherence", "Path difference", "Fringes"],
+          "PYQs": [
+            { "question": "Why is the center of Newton's rings dark in reflected light?", "year": 2020 },
+            { "question": "Explain the formation of Newton's rings in reflected light.", "year": 2022 }
+          ]
+        },
+        {
+          "Topic": "Diffraction and Gratings",
+          "Concept_Tags": ["Fraunhofer", "Single slit", "Resolving power"],
+          "PYQs": [
+            { "question": "What is Rayleigh's criterion for resolution?", "year": 2023 },
+            { "question": "Discuss the Fraunhofer diffraction at a single slit.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Fiber Optics and Lasers",
+      "Topics": [
+        {
+          "Topic": "Fiber Optics",
+          "Concept_Tags": ["TIR", "Numerical aperture", "Acceptance angle"],
+          "PYQs": [
+            { "question": "Differentiate between Step index and Graded index optical fibers.", "year": 2019 },
+            { "question": "Calculate the Numerical Aperture for a fiber with n1=1.5, n2=1.45.", "year": 2022 }
+          ]
+        },
+        {
+          "Topic": "Lasers",
+          "Concept_Tags": ["Population inversion", "Stimulated emission", "He-Ne"],
+          "PYQs": [
+            { "question": "What are the characteristics of Laser beam? Explain Einstein's coefficients.", "year": 2022 },
+            { "question": "Describe the construction and working of He-Ne laser.", "year": 2020 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "Subject": "Soft Skills",
+  "Units": [
+    {
+      "Unit": "Unit I: Basics of Communication",
+      "Topics": [
+        {
+          "Topic": "Communication Process",
+          "Concept_Tags": ["Encoding", "Decoding", "Feedback", "Barriers"],
+          "PYQs": [
+            { "question": "Explain the process of communication with a diagram. What are the barriers to effective communication?", "year": 2023 },
+            { "question": "What are the 7 C's of effective communication? Explain with examples.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Language Skills (LSRW)",
+          "Concept_Tags": ["Listening", "Speaking", "Reading", "Writing"],
+          "PYQs": [
+            { "question": "Discuss the importance of LSRW skills in professional life.", "year": 2022 },
+            { "question": "What are the different types of listening? Explain active listening.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Writing Skills",
+      "Topics": [
+        {
+          "Topic": "Paragraph and Precis",
+          "Concept_Tags": ["Cohesion", "Coherence", "Summary"],
+          "PYQs": [
+            { "question": "Write a precis of the given passage in one-third of its length.", "year": 2023 },
+            { "question": "What are the rules for writing a good precis? Explain with an example.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Business Correspondence",
+          "Concept_Tags": ["Official letter", "Email etiquette"],
+          "PYQs": [
+            { "question": "Draft a formal complaint letter to the Municipal Commissioner about poor sanitation.", "year": 2022 },
+            { "question": "What are the rules of email etiquette in professional communication?", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Personality Development",
+      "Topics": [
+        {
+          "Topic": "Self-Assessment and SWOT",
+          "Concept_Tags": ["Strength", "Weakness", "Opportunity", "Threat"],
+          "PYQs": [
+            { "question": "Explain SWOT analysis with a personal example.", "year": 2023 },
+            { "question": "How does self-assessment help in personality development?", "year": 2020 }
+          ]
+        },
+        {
+          "Topic": "Attitude and Motivation",
+          "Concept_Tags": ["Positive attitude", "Maslow", "Intrinsic motivation"],
+          "PYQs": [
+            { "question": "Explain Maslow's hierarchy of needs with a diagram.", "year": 2022 },
+            { "question": "How does a positive attitude help in career growth? Discuss.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Professional Skills",
+      "Topics": [
+        {
+          "Topic": "Presentation Skills",
+          "Concept_Tags": ["Visual aids", "Body language", "Audience"],
+          "PYQs": [
+            { "question": "What are the key elements of an effective presentation? Discuss.", "year": 2023 },
+            { "question": "Explain the role of body language in presentations.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Group Discussion and Interview",
+          "Concept_Tags": ["GD skills", "Interview types", "Preparation"],
+          "PYQs": [
+            { "question": "What are the do's and don'ts of a group discussion?", "year": 2022 },
+            { "question": "How should one prepare for a personal interview? Discuss commonly asked questions.", "year": 2020 }
+          ]
+        }
+      ]
+    }
+  ]
+}

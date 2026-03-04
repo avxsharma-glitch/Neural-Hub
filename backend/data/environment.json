@@ -1,0 +1,110 @@
+{
+  "Subject": "Environment and Ecology",
+  "Units": [
+    {
+      "Unit": "Unit I: Ecosystem",
+      "Topics": [
+        {
+          "Topic": "Ecosystem Structure",
+          "Concept_Tags": ["Biotic", "Abiotic", "Food chain", "Energy flow"],
+          "PYQs": [
+            { "question": "Explain the structure and functions of an ecosystem with suitable diagrams.", "year": 2023 },
+            { "question": "Differentiate between food chain and food web with examples.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Biogeochemical Cycles",
+          "Concept_Tags": ["Carbon cycle", "Nitrogen cycle", "Water cycle"],
+          "PYQs": [
+            { "question": "Explain the nitrogen cycle with a neat diagram.", "year": 2022 },
+            { "question": "Discuss the carbon cycle and its role in climate change.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Natural Resources",
+      "Topics": [
+        {
+          "Topic": "Water Resources",
+          "Concept_Tags": ["Overexploitation", "Dams", "Floods"],
+          "PYQs": [
+            { "question": "Discuss the effects of overexploitation of water resources.", "year": 2023 },
+            { "question": "What are the environmental impacts of constructing large dams?", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Energy Resources",
+          "Concept_Tags": ["Renewable", "Non-renewable", "Conservation"],
+          "PYQs": [
+            { "question": "Compare renewable and non-renewable energy resources with examples.", "year": 2022 },
+            { "question": "Discuss the importance of energy conservation and methods to achieve it.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Pollution",
+      "Topics": [
+        {
+          "Topic": "Air Pollution",
+          "Concept_Tags": ["Smog", "Acid rain", "Ozone depletion"],
+          "PYQs": [
+            { "question": "Explain the causes, effects and control measures of air pollution.", "year": 2023 },
+            { "question": "What is acid rain? How does it affect the environment?", "year": 2020 }
+          ]
+        },
+        {
+          "Topic": "Water Pollution",
+          "Concept_Tags": ["Eutrophication", "BOD COD", "Biomagnification"],
+          "PYQs": [
+            { "question": "Define BOD and COD. How are they used as indicators of water pollution?", "year": 2022 },
+            { "question": "Explain biomagnification with a suitable example.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Social Issues",
+      "Topics": [
+        {
+          "Topic": "Sustainable Development",
+          "Concept_Tags": ["Rainwater harvesting", "Urban energy", "Resources"],
+          "PYQs": [
+            { "question": "What is sustainable development? Discuss its principles.", "year": 2023 },
+            { "question": "Explain the concept and benefits of rainwater harvesting.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Global Environmental Issues",
+          "Concept_Tags": ["Global warming", "Climate change", "Ozone layer"],
+          "PYQs": [
+            { "question": "Explain the greenhouse effect and its role in global warming.", "year": 2022 },
+            { "question": "What is ozone depletion? Discuss its causes and effects.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Population and Environment",
+      "Topics": [
+        {
+          "Topic": "Population Growth",
+          "Concept_Tags": ["Population explosion", "Family welfare"],
+          "PYQs": [
+            { "question": "Discuss the causes and effects of population explosion in India.", "year": 2021 },
+            { "question": "What are the measures to control population growth?", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Environment and Human Health",
+          "Concept_Tags": ["Pollution health effects", "IT in environment"],
+          "PYQs": [
+            { "question": "Discuss the effects of environmental pollution on human health.", "year": 2019 },
+            { "question": "How can IT be used for environmental management and monitoring?", "year": 2022 }
+          ]
+        }
+      ]
+    }
+  ]
+}

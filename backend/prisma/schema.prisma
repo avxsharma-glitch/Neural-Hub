@@ -2,12 +2,11 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["driverAdapters"]
+  provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
 }
 
 model Subject {
@@ -82,13 +81,15 @@ model StudyProgress {
 }
 
 model ConceptRelation {
-  id               String @id @default(uuid())
-  sourceTopicId    String
-  targetTopicId    String
-  relationshipType String // e.g., "prerequisite", "related"
+  id                   String @id @default(uuid())
+  sourceTopicId        String
+  targetTopicId        String
+  relationshipType     String @default("tag-match") // e.g., "prerequisite", "tag-match"
+  sharedTagsCount      Int    @default(0)
+  relationshipStrength Float  @default(0)
 
-  sourceTopic      Topic  @relation("SourceTopic", fields: [sourceTopicId], references: [id], onDelete: Cascade)
-  targetTopic      Topic  @relation("TargetTopic", fields: [targetTopicId], references: [id], onDelete: Cascade)
+  sourceTopic          Topic  @relation("SourceTopic", fields: [sourceTopicId], references: [id], onDelete: Cascade)
+  targetTopic          Topic  @relation("TargetTopic", fields: [targetTopicId], references: [id], onDelete: Cascade)
 
   @@unique([sourceTopicId, targetTopicId])
 }

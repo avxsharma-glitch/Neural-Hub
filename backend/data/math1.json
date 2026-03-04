@@ -1,0 +1,110 @@
+{
+  "Subject": "Engineering Mathematics I",
+  "Units": [
+    {
+      "Unit": "Unit I: Matrices",
+      "Topics": [
+        {
+          "Topic": "Types of Matrices and Rank",
+          "Concept_Tags": ["Elementary operations", "Rank", "Inverse by Gauss-Jordan"],
+          "PYQs": [
+            { "question": "Find the rank of the matrix [[1,2,3],[2,3,4],[3,5,7]] by reducing to echelon form.", "year": 2023 },
+            { "question": "Using Gauss-Jordan method, find the inverse of a 3x3 matrix.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Eigenvalues and Eigenvectors",
+          "Concept_Tags": ["Characteristic equation", "Diagonalization", "Cayley-Hamilton"],
+          "PYQs": [
+            { "question": "Verify Cayley-Hamilton theorem for A = [[1,2],[2,1]] and find A^(-1).", "year": 2022 },
+            { "question": "Find eigenvalues and eigenvectors of [[2,1,1],[1,2,1],[0,0,1]].", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Differential Calculus I",
+      "Topics": [
+        {
+          "Topic": "Successive Differentiation",
+          "Concept_Tags": ["nth derivative", "Leibniz theorem"],
+          "PYQs": [
+            { "question": "Find the nth derivative of x^2 * e^(3x) using Leibniz theorem.", "year": 2023 },
+            { "question": "If y = (sin^(-1)x)^2, prove that (1-x^2)y_{n+2} - (2n+1)x*y_{n+1} - n^2*y_n = 0.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Partial Differentiation",
+          "Concept_Tags": ["Euler theorem", "Total derivative", "Homogeneous functions"],
+          "PYQs": [
+            { "question": "Verify Euler's theorem for f(x,y) = x^3 + y^3 + 3x^2y.", "year": 2022 },
+            { "question": "If u = f(y-z, z-x, x-y), show that du/dx + du/dy + du/dz = 0.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Differential Calculus II",
+      "Topics": [
+        {
+          "Topic": "Taylor and Maclaurin Series",
+          "Concept_Tags": ["Series expansion", "Approximation"],
+          "PYQs": [
+            { "question": "Expand e^x sin(y) in powers of x and y up to third degree terms.", "year": 2020 },
+            { "question": "Obtain the Maclaurin series expansion of log(1+x) up to x^4.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Jacobians and Maxima-Minima",
+          "Concept_Tags": ["Jacobian determinant", "Lagrange multipliers"],
+          "PYQs": [
+            { "question": "Find the maximum and minimum values of x^3 + y^3 - 3axy.", "year": 2021 },
+            { "question": "Using Lagrange multipliers, find the extreme values of f(x,y,z) = x+y+z subject to x^2+y^2+z^2=1.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Multivariable Calculus I",
+      "Topics": [
+        {
+          "Topic": "Multiple Integrals",
+          "Concept_Tags": ["Double integral", "Triple integral", "Change of order"],
+          "PYQs": [
+            { "question": "Change the order of integration in \u222b(0 to 1) \u222b(x to 1) e^(y^2) dy dx and evaluate.", "year": 2023 },
+            { "question": "Evaluate the triple integral \u222b\u222b\u222b (x+y+z) dV over the region bounded by x=0,y=0,z=0,x+y+z=1.", "year": 2022 }
+          ]
+        },
+        {
+          "Topic": "Beta and Gamma Functions",
+          "Concept_Tags": ["Gamma function", "Beta function", "Dirichlet integral"],
+          "PYQs": [
+            { "question": "Prove the relation B(m,n) = \u0393(m)\u0393(n)/\u0393(m+n).", "year": 2020 },
+            { "question": "Evaluate \u222b(0 to \u221e) x^4 e^(-x) dx using Gamma function.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Vector Calculus",
+      "Topics": [
+        {
+          "Topic": "Vector Differential Operator",
+          "Concept_Tags": ["Gradient", "Divergence", "Curl", "Directional derivative"],
+          "PYQs": [
+            { "question": "Find the directional derivative of f = x^2yz + 4xz^2 at (1,-2,1) in the direction of 2i-j-2k.", "year": 2022 },
+            { "question": "Show that the vector F = (y^2z)i + (2xyz)j + (xy^2)k is irrotational.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Vector Integral Theorems",
+          "Concept_Tags": ["Gauss theorem", "Stokes theorem", "Green theorem"],
+          "PYQs": [
+            { "question": "Verify Green's theorem for \u222e (xy + y^2)dx + x^2dy where C is the boundary of the region y=x and y=x^2.", "year": 2019 },
+            { "question": "Using Gauss divergence theorem, evaluate \u222b\u222b F\u00b7n dS where F = x^2i + y^2j + z^2k over the sphere x^2+y^2+z^2=1.", "year": 2021 }
+          ]
+        }
+      ]
+    }
+  ]
+}

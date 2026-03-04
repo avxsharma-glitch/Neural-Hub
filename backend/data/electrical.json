@@ -1,0 +1,110 @@
+{
+  "Subject": "Fundamentals of Electrical Engineering",
+  "Units": [
+    {
+      "Unit": "Unit I: DC Circuits",
+      "Topics": [
+        {
+          "Topic": "Circuit Laws and Elements",
+          "Concept_Tags": ["Ohm law", "KCL", "KVL", "Active passive"],
+          "PYQs": [
+            { "question": "Using KVL, find the current through each branch in a given circuit with two voltage sources.", "year": 2023 },
+            { "question": "State and verify KCL for a node connecting four branches.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Network Theorems",
+          "Concept_Tags": ["Thevenin", "Norton", "Superposition", "Max power"],
+          "PYQs": [
+            { "question": "Find Thevenin's equivalent across terminals A-B for the given network.", "year": 2022 },
+            { "question": "State and prove the Maximum Power Transfer theorem.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Single Phase AC",
+      "Topics": [
+        {
+          "Topic": "Phasors and Impedance",
+          "Concept_Tags": ["RMS", "RL RC RLC", "Power factor"],
+          "PYQs": [
+            { "question": "An RLC series circuit has R=10\u03a9, L=0.1H, C=100\u03bcF. Find impedance and power factor at 50Hz.", "year": 2023 },
+            { "question": "Draw the phasor diagram for an RL series circuit and derive the expression for impedance.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "AC Power and Resonance",
+          "Concept_Tags": ["Active power", "Reactive power", "Resonance"],
+          "PYQs": [
+            { "question": "Derive the condition for resonance in a series RLC circuit and find the bandwidth.", "year": 2022 },
+            { "question": "Explain the significance of power factor and methods to improve it.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Three Phase Systems",
+      "Topics": [
+        {
+          "Topic": "Star and Delta Systems",
+          "Concept_Tags": ["Line voltage", "Phase voltage", "Balanced load"],
+          "PYQs": [
+            { "question": "Derive the relation between line and phase values in star and delta connections.", "year": 2020 },
+            { "question": "A balanced 3-phase star-connected load draws 5kW at pf 0.8. Find line current if VL=400V.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Power Measurement",
+          "Concept_Tags": ["Two wattmeter", "Power factor"],
+          "PYQs": [
+            { "question": "Explain the two-wattmeter method for measuring three-phase power.", "year": 2021 },
+            { "question": "Two wattmeters read 5kW and 1kW. Find total power and power factor.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Transformers and Machines",
+      "Topics": [
+        {
+          "Topic": "Single Phase Transformer",
+          "Concept_Tags": ["EMF equation", "Voltage regulation", "Losses"],
+          "PYQs": [
+            { "question": "Derive the EMF equation of a single-phase transformer.", "year": 2022 },
+            { "question": "A 200/400V, 50Hz transformer has 100 turns on the primary. Find the core area if Bmax=1T.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "DC Machines",
+          "Concept_Tags": ["EMF equation", "Torque", "Types"],
+          "PYQs": [
+            { "question": "Derive the EMF and torque equations for a DC motor.", "year": 2020 },
+            { "question": "Compare the characteristics of DC series, shunt, and compound motors.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Electrical Installations",
+      "Topics": [
+        {
+          "Topic": "House Wiring and Earthing",
+          "Concept_Tags": ["Earthing", "MCB", "ELCB"],
+          "PYQs": [
+            { "question": "Explain different types of earthing with neat diagrams.", "year": 2022 },
+            { "question": "What is the purpose of MCB and ELCB in domestic installations?", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Batteries and Tariff",
+          "Concept_Tags": ["Lead-acid", "kWh", "Bill calculation"],
+          "PYQs": [
+            { "question": "Explain the working of a lead-acid battery with chemical reactions.", "year": 2023 },
+            { "question": "Calculate the monthly electricity bill: 5 fans (60W, 8hrs), 10 bulbs (100W, 5hrs) at Rs.5/kWh.", "year": 2021 }
+          ]
+        }
+      ]
+    }
+  ]
+}

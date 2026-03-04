@@ -1,0 +1,110 @@
+{
+  "Subject": "Engineering Mathematics II",
+  "Units": [
+    {
+      "Unit": "Unit I: Ordinary Differential Equations",
+      "Topics": [
+        {
+          "Topic": "Higher Order Linear ODEs",
+          "Concept_Tags": ["CF and PI", "Constant coefficients", "Standard rules"],
+          "PYQs": [
+            { "question": "Solve (D^3 - 3D^2 + 3D - 1)y = e^x + x + 1.", "year": 2023 },
+            { "question": "Find the particular integral of (D^2 + 4)y = cos 2x.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Cauchy-Euler Equations",
+          "Concept_Tags": ["Variable coefficients", "x=e^z transform"],
+          "PYQs": [
+            { "question": "Solve the Cauchy-Euler equation x^2 y'' + xy' + y = log x.", "year": 2022 },
+            { "question": "Solve x^3 y''' + 2x^2 y'' + 2y = 10(x + 1/x).", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Multivariable Calculus II",
+      "Topics": [
+        {
+          "Topic": "Improper Integrals",
+          "Concept_Tags": ["Convergence tests", "Comparison test"],
+          "PYQs": [
+            { "question": "Test the convergence of \u222b(1 to \u221e) dx/(x^2+1) and evaluate it.", "year": 2023 },
+            { "question": "Examine the convergence of \u222b(0 to 1) dx/x^p for different values of p.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Applications of Multiple Integrals",
+          "Concept_Tags": ["Area", "Volume", "Moment of inertia"],
+          "PYQs": [
+            { "question": "Find the volume of the solid bounded by xy-plane, the cylinder x^2+y^2=1 and the plane x+y+z=3.", "year": 2022 },
+            { "question": "Using double integration, find the area enclosed by the curves y=x^2 and y=x.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Sequences and Series",
+      "Topics": [
+        {
+          "Topic": "Convergence Tests",
+          "Concept_Tags": ["Ratio test", "Root test", "Raabe test"],
+          "PYQs": [
+            { "question": "Test the convergence of the series \u2211 n!/(n^n) using ratio test.", "year": 2020 },
+            { "question": "Test convergence of \u2211 (n/(n+1))^(n^2).", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Fourier Series",
+          "Concept_Tags": ["Euler coefficients", "Half-range"],
+          "PYQs": [
+            { "question": "Find the Fourier series of f(x) = x^2 in (-\u03c0, \u03c0).", "year": 2022 },
+            { "question": "Obtain the half-range cosine series for f(x) = x in (0, \u03c0).", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Complex Variable Differentiation",
+      "Topics": [
+        {
+          "Topic": "Analytic Functions and CR Equations",
+          "Concept_Tags": ["Harmonic", "CR equations", "Conjugate"],
+          "PYQs": [
+            { "question": "If f(z)=u+iv is analytic, and u = x^2-y^2, find v and f(z).", "year": 2023 },
+            { "question": "Show that u = e^x(x cos y - y sin y) is harmonic and find its conjugate.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Conformal Mapping",
+          "Concept_Tags": ["Bilinear transform", "Inversion"],
+          "PYQs": [
+            { "question": "Find the bilinear transformation that maps z=0,1,\u221e to w=i,-1,-i.", "year": 2022 },
+            { "question": "Show that w=1/z transforms circles into circles or straight lines.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Complex Variable Integration",
+      "Topics": [
+        {
+          "Topic": "Cauchy Integral Theorem and Formula",
+          "Concept_Tags": ["Contour integral", "Cauchy formula"],
+          "PYQs": [
+            { "question": "Evaluate \u222e (z^2+1)/(z^2-1) dz where C is |z|=2 using Cauchy integral formula.", "year": 2023 },
+            { "question": "State and prove Cauchy's integral theorem.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Residue Theorem",
+          "Concept_Tags": ["Residues", "Pole", "Real integrals"],
+          "PYQs": [
+            { "question": "Find the residue of f(z) = e^z/(z-1)^3 at z=1.", "year": 2021 },
+            { "question": "Evaluate \u222b(0 to 2\u03c0) d\u03b8/(5+4cos\u03b8) using contour integration.", "year": 2022 }
+          ]
+        }
+      ]
+    }
+  ]
+}

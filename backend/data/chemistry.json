@@ -1,0 +1,109 @@
+{
+  "Subject": "Engineering Chemistry",
+  "Units": [
+    {
+      "Unit": "Unit I: Atomic and Molecular Structure",
+      "Topics": [
+        {
+          "Topic": "Molecular Orbitals of Diatomic Molecules",
+          "Concept_Tags": ["Molecular orbital theory", "Bond order", "Sigma orbitals", "Paramagnetism"],
+          "PYQs": [
+            { "question": "Explain the formation of bonding and antibonding molecular orbitals with energy level diagrams.", "year": 2023 },
+            { "question": "Why is the O2 molecule paramagnetic while N2 is diamagnetic?", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Band Theory of Solids",
+          "Concept_Tags": ["Valence band", "Conduction band", "Fermi level"],
+          "PYQs": [
+            { "question": "Explain the concept of doping in semiconductors with suitable examples.", "year": 2022 },
+            { "question": "Differentiate between conductors, semiconductors, and insulators based on band theory.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Spectroscopy",
+      "Topics": [
+        {
+          "Topic": "UV-Visible Spectroscopy",
+          "Concept_Tags": ["Beer-Lambert", "Electronic transitions", "Lambda max"],
+          "PYQs": [
+            { "question": "Explain the different types of electronic transitions involved in UV spectroscopy.", "year": 2023 },
+            { "question": "State Beer-Lambert's law and discuss its limitations.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "IR Spectroscopy",
+          "Concept_Tags": ["Vibrational modes", "Fingerprint region", "Hooke's law"],
+          "PYQs": [
+            { "question": "Discuss the principle of IR spectroscopy and selection rules.", "year": 2022 },
+            { "question": "How does IR spectroscopy help in distinguishing hydrogen bonding?", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Electrochemistry",
+      "Topics": [
+        {
+          "Topic": "Galvanic Cells and Nernst Equation",
+          "Concept_Tags": ["EMF", "Electrode potential", "Nernst"],
+          "PYQs": [
+            { "question": "Derive Nernst equation for electrode potential.", "year": 2019 },
+            { "question": "Calculate the EMF of a Daniel cell at 25°C given standard potentials.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Corrosion and Protection",
+          "Concept_Tags": ["Electrochemical corrosion", "Cathodic protection", "Sacrificial anode"],
+          "PYQs": [
+            { "question": "Differentiate between chemical and electrochemical corrosion.", "year": 2020 },
+            { "question": "Write a note on cathodic protection of metals.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Water Technology",
+      "Topics": [
+        {
+          "Topic": "Hardness and EDTA Method",
+          "Concept_Tags": ["Temporary hardness", "Permanent hardness", "EDTA titration"],
+          "PYQs": [
+            { "question": "Explain the EDTA method for determination of hardness of water.", "year": 2022 }
+          ]
+        },
+        {
+          "Topic": "Water Softening",
+          "Concept_Tags": ["Lime-soda", "Zeolite", "Ion exchange"],
+          "PYQs": [
+            { "question": "Compare the Zeolite and Ion Exchange processes.", "year": 2019 },
+            { "question": "Differentiate between scale and sludge formation in boilers.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Polymers and Organometallics",
+      "Topics": [
+        {
+          "Topic": "Classification of Polymers",
+          "Concept_Tags": ["Thermoplastic", "Thermoset", "Addition polymer"],
+          "PYQs": [
+            { "question": "Give the preparation and uses of Nylon-6,6.", "year": 2022 },
+            { "question": "Discuss classification and applications of conducting polymers.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Organometallic Compounds",
+          "Concept_Tags": ["Grignard reagent", "18-electron rule", "Catalysis"],
+          "PYQs": [
+            { "question": "What are organometallic compounds? Give examples.", "year": 2019 },
+            { "question": "Describe the determination of calorific value by Bomb Calorimeter.", "year": 2023 }
+          ]
+        }
+      ]
+    }
+  ]
+}

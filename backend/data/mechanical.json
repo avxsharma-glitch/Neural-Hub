@@ -1,0 +1,110 @@
+{
+  "Subject": "Fundamentals of Mechanical Engineering",
+  "Units": [
+    {
+      "Unit": "Unit I: Force Systems and Equilibrium",
+      "Topics": [
+        {
+          "Topic": "Resultant of Forces",
+          "Concept_Tags": ["Parallelogram law", "Resultant", "Transmissibility"],
+          "PYQs": [
+            { "question": "Two forces of 300N and 400N act at a point at 60\u00b0. Find the resultant and its direction.", "year": 2023 },
+            { "question": "State and explain the principle of transmissibility of forces.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Equilibrium of Rigid Bodies",
+          "Concept_Tags": ["Free body diagram", "Lami theorem", "Support reactions"],
+          "PYQs": [
+            { "question": "Find the support reactions for a simply supported beam with UDL and point load.", "year": 2022 },
+            { "question": "A body weighing 500N is hung by two strings. Using Lami's theorem find tensions.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Friction and Beams",
+      "Topics": [
+        {
+          "Topic": "Dry Friction",
+          "Concept_Tags": ["Coefficient of friction", "Angle of repose", "Ladder friction"],
+          "PYQs": [
+            { "question": "A ladder of weight 200N rests against a smooth wall. Find minimum angle for equilibrium if \u03bc=0.3 at floor.", "year": 2023 },
+            { "question": "Derive the relation between angle of friction and coefficient of friction.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Shear Force and Bending Moment",
+          "Concept_Tags": ["SFD", "BMD", "Point of contraflexure"],
+          "PYQs": [
+            { "question": "Draw SFD and BMD for a simply supported beam carrying UDL over entire span.", "year": 2022 },
+            { "question": "A cantilever beam of 4m carries a point load of 10kN at free end. Draw SFD and BMD.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Centroid and Moment of Inertia",
+      "Topics": [
+        {
+          "Topic": "Centroid",
+          "Concept_Tags": ["Composite areas", "First moment"],
+          "PYQs": [
+            { "question": "Find the centroid of an L-section with given dimensions.", "year": 2020 },
+            { "question": "Determine the centroid of a semicircular area of radius R from its diameter.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Moment of Inertia",
+          "Concept_Tags": ["Parallel axis", "Perpendicular axis", "Standard sections"],
+          "PYQs": [
+            { "question": "State and prove the parallel axis theorem.", "year": 2022 },
+            { "question": "Find MI of a T-section about its centroidal axes.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Stress and Strain",
+      "Topics": [
+        {
+          "Topic": "Simple Stress and Strain",
+          "Concept_Tags": ["Hooke law", "Young modulus", "Stress-strain curve"],
+          "PYQs": [
+            { "question": "Draw and explain the stress-strain curve for mild steel with all salient points.", "year": 2023 },
+            { "question": "A steel rod of 20mm diameter carries a load of 30kN. Find stress and elongation if E=200GPa, L=2m.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Elastic Constants and Thermal Stress",
+          "Concept_Tags": ["Poisson ratio", "Bulk modulus", "Thermal stress"],
+          "PYQs": [
+            { "question": "Derive the relationship between E, G, and K.", "year": 2022 },
+            { "question": "A copper bar is heated from 20\u00b0C to 70\u00b0C. Find thermal stress if expansion is fully prevented. E=100GPa, \u03b1=17\u00d710^-6/\u00b0C.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: IC Engines",
+      "Topics": [
+        {
+          "Topic": "4-Stroke and 2-Stroke Engines",
+          "Concept_Tags": ["SI engine", "CI engine", "Otto cycle"],
+          "PYQs": [
+            { "question": "Compare 4-stroke and 2-stroke engines with neat diagrams.", "year": 2023 },
+            { "question": "Derive the expression for air-standard efficiency of Otto cycle.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Performance Parameters",
+          "Concept_Tags": ["Thermal efficiency", "Specific fuel consumption"],
+          "PYQs": [
+            { "question": "Define brake power, indicated power, mechanical efficiency and their interrelationship.", "year": 2021 },
+            { "question": "An engine develops 20kW and consumes 8kg/hr fuel (CV=42000kJ/kg). Find thermal efficiency.", "year": 2022 }
+          ]
+        }
+      ]
+    }
+  ]
+}

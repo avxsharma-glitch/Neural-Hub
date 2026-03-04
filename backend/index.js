@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001'] }));
+app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'] }));
 app.use(express.json());
 
 // Health Check
@@ -17,6 +17,7 @@ app.get('/api/health', (req, res) => {
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/subjects', require('./routes/subjects'));
+app.use('/api/units', require('./routes/units'));
 app.use('/api/topics', require('./routes/topics'));
 app.use('/api/pyq', require('./routes/pyq'));
 app.use('/api/concepts', require('./routes/concepts'));

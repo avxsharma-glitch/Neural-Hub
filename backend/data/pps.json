@@ -1,0 +1,110 @@
+{
+  "Subject": "Programming for Problem Solving",
+  "Units": [
+    {
+      "Unit": "Unit I: Basics of Programming",
+      "Topics": [
+        {
+          "Topic": "Algorithms and Flowcharts",
+          "Concept_Tags": ["Algorithm steps", "Flowchart symbols"],
+          "PYQs": [
+            { "question": "Write an algorithm and draw a flowchart to find the largest of three numbers.", "year": 2023 },
+            { "question": "Explain various symbols used in flowcharts with examples.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "C Language Basics",
+          "Concept_Tags": ["Data types", "Operators", "printf scanf"],
+          "PYQs": [
+            { "question": "Explain different data types in C with their sizes and ranges.", "year": 2022 },
+            { "question": "Differentiate between = and == operators. Write a program using scanf and printf.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: Control Structures",
+      "Topics": [
+        {
+          "Topic": "Decision Making",
+          "Concept_Tags": ["if-else", "switch", "nested"],
+          "PYQs": [
+            { "question": "Write a C program using switch-case to implement a simple calculator.", "year": 2023 },
+            { "question": "Explain the difference between if-else ladder and switch-case with examples.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Loops",
+          "Concept_Tags": ["for", "while", "do-while", "break", "continue"],
+          "PYQs": [
+            { "question": "Write a C program to print Fibonacci series up to n terms using a for loop.", "year": 2022 },
+            { "question": "Differentiate between while and do-while loops with suitable examples.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: Functions and Recursion",
+      "Topics": [
+        {
+          "Topic": "Functions",
+          "Concept_Tags": ["Declaration", "Definition", "Call by value", "Call by reference"],
+          "PYQs": [
+            { "question": "Explain call by value and call by reference with a swap function example.", "year": 2023 },
+            { "question": "What is the scope and lifetime of a variable in C? Explain with examples.", "year": 2020 }
+          ]
+        },
+        {
+          "Topic": "Recursion",
+          "Concept_Tags": ["Factorial", "Fibonacci", "Stack"],
+          "PYQs": [
+            { "question": "Write a recursive function to compute GCD of two numbers.", "year": 2022 },
+            { "question": "Explain how stack is used during recursion with Tower of Hanoi example.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Arrays and Pointers",
+      "Topics": [
+        {
+          "Topic": "Arrays",
+          "Concept_Tags": ["1D array", "2D array", "Strings"],
+          "PYQs": [
+            { "question": "Write a C program to multiply two matrices of order m\u00d7n and n\u00d7p.", "year": 2023 },
+            { "question": "Write a program to check if a string is palindrome without using string library functions.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Pointers",
+          "Concept_Tags": ["Pointer arithmetic", "Arrays and pointers", "Dynamic allocation"],
+          "PYQs": [
+            { "question": "Explain pointer arithmetic and relationship between arrays and pointers in C.", "year": 2022 },
+            { "question": "Write a program to dynamically allocate memory for n integers using malloc and free.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Structures and Files",
+      "Topics": [
+        {
+          "Topic": "Structures and Unions",
+          "Concept_Tags": ["User-defined type", "Memory layout"],
+          "PYQs": [
+            { "question": "Differentiate between structures and unions in C with memory allocation examples.", "year": 2023 },
+            { "question": "Write a program using structure to store and display student records.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "File Handling",
+          "Concept_Tags": ["fopen", "fread", "fwrite", "fprintf"],
+          "PYQs": [
+            { "question": "Write a C program to copy the contents of one file to another.", "year": 2022 },
+            { "question": "Explain different file opening modes in C with examples.", "year": 2021 }
+          ]
+        }
+      ]
+    }
+  ]
+}

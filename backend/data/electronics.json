@@ -1,0 +1,110 @@
+{
+  "Subject": "Electronics Engineering",
+  "Units": [
+    {
+      "Unit": "Unit I: PN Junction and Applications",
+      "Topics": [
+        {
+          "Topic": "PN Junction Diode",
+          "Concept_Tags": ["Depletion region", "Forward bias", "Reverse bias", "Diode equation"],
+          "PYQs": [
+            { "question": "Explain the formation of depletion region in a PN junction with energy band diagram.", "year": 2023 },
+            { "question": "Derive the diode current equation and discuss the effect of temperature.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Rectifiers and Filters",
+          "Concept_Tags": ["Half wave", "Bridge", "Ripple factor"],
+          "PYQs": [
+            { "question": "Compare half-wave and full-wave bridge rectifiers with waveforms and ripple factor.", "year": 2022 },
+            { "question": "Design a full-wave bridge rectifier with capacitor filter for a 12V DC output.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit II: BJT",
+      "Topics": [
+        {
+          "Topic": "BJT Characteristics",
+          "Concept_Tags": ["CE configuration", "Current gain", "Operating regions"],
+          "PYQs": [
+            { "question": "Draw and explain the input and output characteristics of a BJT in CE configuration.", "year": 2023 },
+            { "question": "Define alpha, beta of a transistor and derive the relation between them.", "year": 2019 }
+          ]
+        },
+        {
+          "Topic": "Biasing and Q-Point",
+          "Concept_Tags": ["Voltage divider bias", "Stability", "Load line"],
+          "PYQs": [
+            { "question": "Design a voltage divider bias circuit for a CE amplifier with given operating point.", "year": 2022 },
+            { "question": "Explain the concept of DC load line and Q-point stability.", "year": 2021 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit III: FET and MOSFET",
+      "Topics": [
+        {
+          "Topic": "JFET Operation",
+          "Concept_Tags": ["Pinch-off", "Idss", "Shockley equation"],
+          "PYQs": [
+            { "question": "Explain the working of an n-channel JFET with drain characteristics.", "year": 2020 },
+            { "question": "A JFET has Idss=10mA, Vp=-4V. Find Id when Vgs=-2V using Shockley equation.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "MOSFET Types",
+          "Concept_Tags": ["Enhancement", "Depletion", "Threshold voltage"],
+          "PYQs": [
+            { "question": "Compare enhancement-mode and depletion-mode MOSFETs with transfer characteristics.", "year": 2022 },
+            { "question": "Why are MOSFETs preferred over BJTs in digital circuits? Explain.", "year": 2019 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit IV: Operational Amplifiers",
+      "Topics": [
+        {
+          "Topic": "Op-Amp Basics",
+          "Concept_Tags": ["Ideal op-amp", "Virtual ground", "IC 741"],
+          "PYQs": [
+            { "question": "List the ideal characteristics of an op-amp and compare with IC 741 parameters.", "year": 2021 },
+            { "question": "Explain the concept of virtual ground in an inverting amplifier.", "year": 2023 }
+          ]
+        },
+        {
+          "Topic": "Op-Amp Applications",
+          "Concept_Tags": ["Inverting", "Non-inverting", "Integrator", "Differentiator"],
+          "PYQs": [
+            { "question": "Design an inverting amplifier with gain -10 using op-amp. Draw the circuit and derive gain.", "year": 2022 },
+            { "question": "Explain op-amp based integrator and differentiator circuits with waveforms.", "year": 2020 }
+          ]
+        }
+      ]
+    },
+    {
+      "Unit": "Unit V: Digital Electronics",
+      "Topics": [
+        {
+          "Topic": "Number Systems and Boolean Algebra",
+          "Concept_Tags": ["Binary", "De Morgan", "Logic gates"],
+          "PYQs": [
+            { "question": "Convert (AF2)16 to binary and octal.", "year": 2023 },
+            { "question": "Prove De Morgan's theorems using truth tables.", "year": 2021 }
+          ]
+        },
+        {
+          "Topic": "Combinational Circuits",
+          "Concept_Tags": ["K-Map", "Adder", "MUX"],
+          "PYQs": [
+            { "question": "Simplify F(A,B,C,D) = \u2211m(0,1,2,5,8,9,10) using 4-variable K-Map.", "year": 2022 },
+            { "question": "Design a 4-bit binary adder using full adders.", "year": 2019 }
+          ]
+        }
+      ]
+    }
+  ]
+}
